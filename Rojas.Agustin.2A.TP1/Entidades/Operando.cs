@@ -92,7 +92,7 @@ namespace Entidades
             string binarioRetorno = "Valor invalido";
             int resto;
             string auxBinario = "";
-            if(numero > 0)
+            if(numero > 0 && numero % 1 == 0) //Que sea entero positivo
             {
                 binarioRetorno = "";
                 while(numero > 0)
