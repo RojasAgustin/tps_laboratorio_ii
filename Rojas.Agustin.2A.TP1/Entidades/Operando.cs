@@ -66,16 +66,23 @@ namespace Entidades
             if (EsBinario(binario))
             {
                 auxBinario = int.Parse(binario);
-                if (auxBinario > 0)
+                if (auxBinario > -1)
                 {
-                    while (auxBinario > 0)
+                    if (auxBinario != 0)
                     {
-                        resto = auxBinario % 10;
-                        auxBinario /= 10;
-                        auxDecimal += resto * auxBase;
-                        auxBase *= 2;
+                        while (auxBinario > 0)
+                        {
+                            resto = auxBinario % 10;
+                            auxBinario /= 10;
+                            auxDecimal += resto * auxBase;
+                            auxBase *= 2;
+                        }
+                        decimalRetorno = auxDecimal.ToString();
                     }
-                    decimalRetorno = auxDecimal.ToString();
+                    else
+                    {
+                        decimalRetorno = "0";
+                    }
                 }
             }
             return decimalRetorno;
@@ -93,20 +100,27 @@ namespace Entidades
             int auxNumero;
             int resto;
             string auxBinario = "";
-            if(numero > 0) 
+            if(numero > -1) 
             {
-                auxNumero = (int)numero;//Se le saca la parte decimal
-                binarioRetorno = "";
-                while(auxNumero > 0)
+                if (numero != 0)
                 {
-                    resto = auxNumero / 2;
-                    auxBinario += (auxNumero % 2).ToString();
-                    auxNumero = resto;
-                }
+                    auxNumero = (int)numero;//Se le saca la parte decimal
+                    binarioRetorno = "";
+                    while (auxNumero > 0)
+                    {
+                        resto = auxNumero / 2;
+                        auxBinario += (auxNumero % 2).ToString();
+                        auxNumero = resto;
+                    }
 
-                for (int i = auxBinario.Length - 1; i >= 0; i--)
+                    for (int i = auxBinario.Length - 1; i >= 0; i--)
+                    {
+                        binarioRetorno += auxBinario[i];
+                    }
+                }
+                else
                 {
-                    binarioRetorno += auxBinario[i];
+                    binarioRetorno = "0";
                 }
             }
             return binarioRetorno;

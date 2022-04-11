@@ -39,6 +39,7 @@ namespace MiCalculadora
             cmbOperador.Items.Add('-');
             cmbOperador.Items.Add('*');
             cmbOperador.Items.Add('/');
+            lblResultado.Text = "0";
         }
 
         /// <summary>
@@ -76,45 +77,30 @@ namespace MiCalculadora
         }
 
         /// <summary>
-        /// Revisa que haya un resultado y de ser asi 
-        /// llama al metodo que lo pasa de decimal a binario
+        /// Llama al metodo que lo pasa de decimal a binario
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
-        {
-            if (lblResultado.Text.Equals(""))
-            {
-                MessageBox.Show("Todavia no se hizo una operacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Operando numero = new Operando(lblResultado.Text);
-                lblResultado.Text = numero.DecimalBinario(lblResultado.Text);
-                btnConvertirABinario.Enabled = false;
-                btnConvertirADecimal.Enabled = true;
-            }
+        { 
+            Operando numero = new Operando(lblResultado.Text);
+            lblResultado.Text = numero.DecimalBinario(lblResultado.Text);
+            btnConvertirABinario.Enabled = false;
+            btnConvertirADecimal.Enabled = true;
         }
 
         /// <summary>
-        /// Revisa que haya un resultado y de ser asi
-        /// llama al metodo que lo pasa de binario a decimal
+        /// Llama al metodo que lo pasa de binario a decimal
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            if (lblResultado.Text.Equals(""))
-            {
-                MessageBox.Show("Todavia no se hizo una operacion","Error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Operando numero = new Operando(lblResultado.Text);
-                lblResultado.Text = numero.BinarioDecimal(lblResultado.Text);
-                btnConvertirADecimal.Enabled = false;
-                btnConvertirABinario.Enabled = true;
-            }
+            Operando numero = new Operando(lblResultado.Text);
+            lblResultado.Text = numero.BinarioDecimal(lblResultado.Text);
+            btnConvertirADecimal.Enabled = false;
+            btnConvertirABinario.Enabled = true;
+            
         }
         /// <summary>
         /// Llama al metodo Limpiar
@@ -135,6 +121,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
+            string resultado_cadena;
             if (cmbOperador.SelectedIndex < 0 || string.IsNullOrEmpty(txtNumero1.Text) || string.IsNullOrEmpty(txtNumero2.Text))
             {
                 MessageBox.Show("Rellene todos los campos","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -144,7 +131,14 @@ namespace MiCalculadora
                 if (double.TryParse(txtNumero1.Text, out double num) && double.TryParse(txtNumero2.Text, out num))
                 {
                     double resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.SelectedItem.ToString());
-                    string resultado_cadena = resultado.ToString("#.###");
+                    if(resultado == 0)
+                    {
+                        resultado_cadena = "0";
+                    }
+                    else
+                    {
+                        resultado_cadena = resultado.ToString("#.###");
+                    }
                     lblResultado.Text = resultado_cadena;
                     lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.SelectedItem.ToString()} {txtNumero2.Text} = {resultado_cadena}");
                     btnConvertirABinario.Enabled = true;
@@ -165,7 +159,7 @@ namespace MiCalculadora
             txtNumero1.ResetText();
             cmbOperador.SelectedIndex = -1;
             txtNumero2.ResetText();
-            lblResultado.ResetText();
+            lblResultado.Text = "0";
             lstOperaciones.Items.Clear();
             btnConvertirABinario.Enabled = true;
             btnConvertirADecimal.Enabled = true;
