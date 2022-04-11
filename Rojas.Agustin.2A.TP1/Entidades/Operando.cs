@@ -65,25 +65,22 @@ namespace Entidades
 
             if (EsBinario(binario))
             {
-                auxBinario = int.Parse(binario);
-                if (auxBinario > -1)
+                auxBinario = Math.Abs((int)double.Parse(binario));
+                if (auxBinario != 0)
                 {
-                    if (auxBinario != 0)
+                    while (auxBinario > 0)
                     {
-                        while (auxBinario > 0)
-                        {
-                            resto = auxBinario % 10;
-                            auxBinario /= 10;
-                            auxDecimal += resto * auxBase;
-                            auxBase *= 2;
-                        }
-                        decimalRetorno = auxDecimal.ToString();
+                        resto = auxBinario % 10;
+                        auxBinario /= 10;
+                        auxDecimal += resto * auxBase;
+                        auxBase *= 2;
                     }
-                    else
-                    {
-                        decimalRetorno = "0";
-                    }
+                    decimalRetorno = auxDecimal.ToString();
                 }
+                else
+                {
+                    decimalRetorno = "0";
+                } 
             }
             return decimalRetorno;
         }
@@ -100,29 +97,28 @@ namespace Entidades
             int auxNumero;
             int resto;
             string auxBinario = "";
-            if(numero > -1) 
+            
+            if (numero != 0)
             {
-                if (numero != 0)
+                auxNumero = Math.Abs((int)numero);
+                binarioRetorno = "";
+                while (auxNumero > 0)
                 {
-                    auxNumero = (int)numero;//Se le saca la parte decimal
-                    binarioRetorno = "";
-                    while (auxNumero > 0)
-                    {
-                        resto = auxNumero / 2;
-                        auxBinario += (auxNumero % 2).ToString();
-                        auxNumero = resto;
-                    }
-
-                    for (int i = auxBinario.Length - 1; i >= 0; i--)
-                    {
-                        binarioRetorno += auxBinario[i];
-                    }
+                    resto = auxNumero / 2;
+                    auxBinario += (auxNumero % 2).ToString();
+                    auxNumero = resto;
                 }
-                else
+
+                for (int i = auxBinario.Length - 1; i >= 0; i--)
                 {
-                    binarioRetorno = "0";
+                    binarioRetorno += auxBinario[i];
                 }
             }
+            else
+            {
+                binarioRetorno = "0";
+            }
+            
             return binarioRetorno;
         }
 
@@ -152,8 +148,12 @@ namespace Entidades
             bool esBinario = true;
             for (int i = 0; i < binario.Length; i++)
             {
-                if(binario[i] != '0' && binario[i] != '1' && binario[i] != '\n')
+                if(binario[i] != '0' && binario[i] != '1' && binario[i] != '-')
                 {
+                    if(binario[i] == '.')
+                    {
+                        break;
+                    }
                     esBinario = false;
                     break;
                 }
