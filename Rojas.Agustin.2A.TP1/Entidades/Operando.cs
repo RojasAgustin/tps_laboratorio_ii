@@ -90,16 +90,18 @@ namespace Entidades
         public string DecimalBinario(double numero)
         {
             string binarioRetorno = "Valor invalido";
+            int auxNumero;
             int resto;
             string auxBinario = "";
-            if(numero > 0 && numero % 1 == 0) //Que sea entero positivo
+            if(numero > 0) 
             {
+                auxNumero = (int)numero;//Se le saca la parte decimal
                 binarioRetorno = "";
-                while(numero > 0)
+                while(auxNumero > 0)
                 {
-                    resto = (int)numero / 2;
-                    auxBinario += (numero % 2).ToString();
-                    numero = resto;
+                    resto = auxNumero / 2;
+                    auxBinario += (auxNumero % 2).ToString();
+                    auxNumero = resto;
                 }
 
                 for (int i = auxBinario.Length - 1; i >= 0; i--)
