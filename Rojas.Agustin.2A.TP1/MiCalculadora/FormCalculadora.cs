@@ -121,7 +121,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            string resultado_cadena;
+            string resultadoAMostrar;
             if (cmbOperador.SelectedIndex < 0 || string.IsNullOrEmpty(txtNumero1.Text) || string.IsNullOrEmpty(txtNumero2.Text))
             {
                 MessageBox.Show("Rellene todos los campos","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -130,17 +130,17 @@ namespace MiCalculadora
             {
                 if (double.TryParse(txtNumero1.Text, out double num) && double.TryParse(txtNumero2.Text, out num))
                 {
-                    double resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.SelectedItem.ToString());
-                    if(resultado == 0)
+                    double resultadoOperacion = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.SelectedItem.ToString());
+                    if(resultadoOperacion == 0)
                     {
-                        resultado_cadena = "0";
+                        resultadoAMostrar = "0";
                     }
                     else
                     {
-                        resultado_cadena = resultado.ToString("#.###");
+                        resultadoAMostrar = resultadoOperacion.ToString("#.###");
                     }
-                    lblResultado.Text = resultado_cadena;
-                    lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.SelectedItem.ToString()} {txtNumero2.Text} = {resultado_cadena}");
+                    lblResultado.Text = resultadoAMostrar;
+                    lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.SelectedItem.ToString()} {txtNumero2.Text} = {resultadoAMostrar}");
                     btnConvertirABinario.Enabled = true;
                     btnConvertirADecimal.Enabled = true;
                 }
