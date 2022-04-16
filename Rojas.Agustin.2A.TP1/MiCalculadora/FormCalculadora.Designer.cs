@@ -126,16 +126,16 @@ namespace MiCalculadora
             // 
             this.lstOperaciones.FormattingEnabled = true;
             this.lstOperaciones.ItemHeight = 15;
-            this.lstOperaciones.Location = new System.Drawing.Point(400, 40);
+            this.lstOperaciones.Location = new System.Drawing.Point(407, 40);
             this.lstOperaciones.Name = "lstOperaciones";
-            this.lstOperaciones.Size = new System.Drawing.Size(172, 169);
+            this.lstOperaciones.Size = new System.Drawing.Size(184, 169);
             this.lstOperaciones.TabIndex = 4;
             // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 221);
+            this.ClientSize = new System.Drawing.Size(598, 221);
             this.Controls.Add(this.lstOperaciones);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnConvertirADecimal);

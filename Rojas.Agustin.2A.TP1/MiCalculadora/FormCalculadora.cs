@@ -160,7 +160,6 @@ namespace MiCalculadora
             cmbOperador.SelectedIndex = -1;
             txtNumero2.ResetText();
             lblResultado.Text = "0";
-            lstOperaciones.Items.Clear();
             btnConvertirABinario.Enabled = true;
             btnConvertirADecimal.Enabled = true;
         }
