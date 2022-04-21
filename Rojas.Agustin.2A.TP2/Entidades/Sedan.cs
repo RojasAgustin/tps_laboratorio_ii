@@ -28,6 +28,14 @@ namespace Entidades
         {
             this.tipo = ETipo.CuatroPuertas;
         }
+
+        /// <summary>
+        /// Sobrecarga del constructor de la clase
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
+        /// <param name="tipo"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo):this(marca,chasis,color)
         {
             this.tipo = tipo;
@@ -44,16 +52,21 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Agrega todos los datos del objeto que lo llama
+        /// a un objeto StringBuilder y lo retorna como string
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("************** SEDAN **************");
-            sb.Append(base.Mostrar());
-            sb.AppendLine($"Tamaño: {this.Tamanio}");
-            sb.AppendLine($"Tipo: {this.tipo}");
+            sb.AppendLine("SEDAN");
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO: {this.Tamanio}");
+            sb.AppendLine($"TIPO: {this.tipo}");
             sb.AppendLine("");
-            sb.AppendLine("***********************************");
+            sb.AppendLine("---------------------");
 
             return sb.ToString();
         }

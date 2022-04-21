@@ -22,10 +22,18 @@ namespace Entidades
         }
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor de la clase que inicializa la lista
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+
+        /// <summary>
+        /// Sobrecarga del constructor de la clase.
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Taller(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -55,9 +63,8 @@ namespace Entidades
         public static string Listar(Taller taller, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Taller de Vehiculos");
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles\n", taller.vehiculos.Count, taller.espacioDisponible);
-            sb.AppendLine();
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
+            sb.AppendLine("");
             foreach (Vehiculo v in taller.vehiculos)
             {
                 switch (tipo)

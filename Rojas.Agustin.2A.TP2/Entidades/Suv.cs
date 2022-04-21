@@ -8,10 +8,17 @@ namespace Entidades
 {
     public class Suv: Vehiculo
     {
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
         public Suv(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
         {
 
         }
+
         /// <summary>
         /// SUV son 'Grande'
         /// </summary>
@@ -23,15 +30,20 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Agrega todos los datos del objeto que lo llama
+        /// a un objeto StringBuilder y lo retorna como string
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("*************** SUV ***************");
-            sb.Append(base.Mostrar());
-            sb.AppendLine($"Tamaño: {this.Tamanio}");
+            sb.AppendLine("SUV");
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO: {this.Tamanio}");
             sb.AppendLine("");
-            sb.AppendLine("***********************************");
+            sb.AppendLine("---------------------");
 
             return sb.ToString();
         }

@@ -31,6 +31,12 @@ namespace Entidades
             Grande
         }
         
+        /// <summary>
+        /// Constructor de la clase
+        /// </summary>
+        /// <param name="chasis"></param>
+        /// <param name="marca"></param>
+        /// <param name="color"></param>
         public Vehiculo(string chasis,EMarca marca,ConsoleColor color)
         {
             this.chasis = chasis;
@@ -52,13 +58,19 @@ namespace Entidades
             return (string)this;
         }
 
+        /// <summary>
+        /// Agrega todos los datos del objeto que recibe como parametro
+        /// a un objeto StringBuilder y lo retorna como string
+        /// </summary>
+        /// <param name="p"></param>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"Chasis: {p.chasis}\r");
-            sb.AppendLine($"Marca: {p.marca}\r");
-            sb.AppendLine($"Color: {p.color}\r");
+            sb.AppendLine($"CHASIS : {p.chasis}\r");
+            sb.AppendLine($"MARCA : {p.marca}\r");
+            sb.AppendLine($"COLOR : {p.color}\r");
+            sb.AppendLine("---------------------");
 
             return sb.ToString();
         }
@@ -73,6 +85,7 @@ namespace Entidades
         {
             return (v1.chasis == v2.chasis);
         }
+
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto
         /// </summary>
