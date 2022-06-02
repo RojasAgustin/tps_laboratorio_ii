@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
+    [XmlInclude(typeof(Novela))]
+    [XmlInclude(typeof(Comic))]
+    [XmlInclude(typeof(NoFiccion))]
     public abstract class Libro
     {
         protected string titulo;

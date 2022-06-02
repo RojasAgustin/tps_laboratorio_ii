@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Novela :Libro,IImpuestoPais
+    public class Novela :Libro,IImpuestoPAIS
     {
         private EGenero genero;
         private EIdiomas idioma;
@@ -126,8 +126,8 @@ namespace Entidades
             return str.ToString();
         }
         /// <summary>
-        /// Calcula el impuesto a aplicar de la interfaz IImpuestoPais
-        /// que es del 50%
+        /// Implementacion del metodo de la interfaz IImpuestoPAIS
+        /// Calcula el impuesto, que es del 50%
         /// </summary>
         /// <returns></returns>
         public double CalcularImpuesto()

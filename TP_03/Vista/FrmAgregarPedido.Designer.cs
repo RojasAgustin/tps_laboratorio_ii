@@ -191,6 +191,7 @@ namespace Vista
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAgregarPedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Pedido";
             this.ResumeLayout(false);
             this.PerformLayout();

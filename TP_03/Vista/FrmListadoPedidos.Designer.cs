@@ -36,7 +36,12 @@ namespace Vista
             this.btnVolver = new System.Windows.Forms.Button();
             this.lblGananciasTexto = new System.Windows.Forms.Label();
             this.lblGanancias = new System.Windows.Forms.Label();
+            this.mnuArchivos = new System.Windows.Forms.MenuStrip();
+            this.mnuToolStripArchivos = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuItemGuardar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgListado)).BeginInit();
+            this.mnuArchivos.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgListado
@@ -48,7 +53,7 @@ namespace Vista
             this.dgListado.BackgroundColor = System.Drawing.Color.GhostWhite;
             this.dgListado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgListado.Location = new System.Drawing.Point(2, 53);
+            this.dgListado.Location = new System.Drawing.Point(-2, 68);
             this.dgListado.MultiSelect = false;
             this.dgListado.Name = "dgListado";
             this.dgListado.ReadOnly = true;
@@ -68,7 +73,7 @@ namespace Vista
             this.cboOrdenar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboOrdenar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cboOrdenar.FormattingEnabled = true;
-            this.cboOrdenar.Location = new System.Drawing.Point(841, 18);
+            this.cboOrdenar.Location = new System.Drawing.Point(841, 34);
             this.cboOrdenar.Name = "cboOrdenar";
             this.cboOrdenar.Size = new System.Drawing.Size(121, 23);
             this.cboOrdenar.TabIndex = 0;
@@ -78,7 +83,7 @@ namespace Vista
             // 
             this.lblOrdenar.AutoSize = true;
             this.lblOrdenar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblOrdenar.Location = new System.Drawing.Point(760, 21);
+            this.lblOrdenar.Location = new System.Drawing.Point(760, 37);
             this.lblOrdenar.Name = "lblOrdenar";
             this.lblOrdenar.Size = new System.Drawing.Size(75, 15);
             this.lblOrdenar.TabIndex = 8;
@@ -92,10 +97,10 @@ namespace Vista
             this.btnAtender.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAtender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAtender.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAtender.Location = new System.Drawing.Point(429, 566);
+            this.btnAtender.Location = new System.Drawing.Point(429, 580);
             this.btnAtender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtender.Name = "btnAtender";
-            this.btnAtender.Size = new System.Drawing.Size(119, 66);
+            this.btnAtender.Size = new System.Drawing.Size(119, 52);
             this.btnAtender.TabIndex = 3;
             this.btnAtender.Text = "ATENDER";
             this.btnAtender.UseVisualStyleBackColor = false;
@@ -109,10 +114,10 @@ namespace Vista
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnVolver.Location = new System.Drawing.Point(2, 568);
+            this.btnVolver.Location = new System.Drawing.Point(2, 580);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(114, 60);
+            this.btnVolver.Size = new System.Drawing.Size(114, 48);
             this.btnVolver.TabIndex = 2;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -123,21 +128,59 @@ namespace Vista
             this.lblGananciasTexto.AutoSize = true;
             this.lblGananciasTexto.BackColor = System.Drawing.Color.GhostWhite;
             this.lblGananciasTexto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblGananciasTexto.Location = new System.Drawing.Point(760, 586);
+            this.lblGananciasTexto.Location = new System.Drawing.Point(736, 587);
             this.lblGananciasTexto.Name = "lblGananciasTexto";
-            this.lblGananciasTexto.Size = new System.Drawing.Size(107, 25);
+            this.lblGananciasTexto.Size = new System.Drawing.Size(123, 25);
             this.lblGananciasTexto.TabIndex = 4;
-            this.lblGananciasTexto.Text = "Ganancias:";
+            this.lblGananciasTexto.Text = "Ganancias: $";
             // 
             // lblGanancias
             // 
             this.lblGanancias.AutoSize = true;
             this.lblGanancias.BackColor = System.Drawing.Color.GhostWhite;
             this.lblGanancias.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblGanancias.Location = new System.Drawing.Point(864, 586);
+            this.lblGanancias.Location = new System.Drawing.Point(850, 587);
             this.lblGanancias.Name = "lblGanancias";
             this.lblGanancias.Size = new System.Drawing.Size(0, 25);
             this.lblGanancias.TabIndex = 9;
+            // 
+            // mnuArchivos
+            // 
+            this.mnuArchivos.BackColor = System.Drawing.Color.GhostWhite;
+            this.mnuArchivos.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mnuArchivos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuToolStripArchivos});
+            this.mnuArchivos.Location = new System.Drawing.Point(0, 0);
+            this.mnuArchivos.Name = "mnuArchivos";
+            this.mnuArchivos.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.mnuArchivos.Size = new System.Drawing.Size(971, 24);
+            this.mnuArchivos.TabIndex = 10;
+            this.mnuArchivos.Text = "menuStrip1";
+            // 
+            // mnuToolStripArchivos
+            // 
+            this.mnuToolStripArchivos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.mnuToolStripArchivos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuItemAbrir,
+            this.mnuItemGuardar});
+            this.mnuToolStripArchivos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mnuToolStripArchivos.Name = "mnuToolStripArchivos";
+            this.mnuToolStripArchivos.Size = new System.Drawing.Size(62, 20);
+            this.mnuToolStripArchivos.Text = "Archivo";
+            // 
+            // mnuItemAbrir
+            // 
+            this.mnuItemAbrir.Name = "mnuItemAbrir";
+            this.mnuItemAbrir.Size = new System.Drawing.Size(180, 22);
+            this.mnuItemAbrir.Text = "Abrir";
+            this.mnuItemAbrir.Click += new System.EventHandler(this.mnuItemAbrir_Click);
+            // 
+            // mnuItemGuardar
+            // 
+            this.mnuItemGuardar.Name = "mnuItemGuardar";
+            this.mnuItemGuardar.Size = new System.Drawing.Size(180, 22);
+            this.mnuItemGuardar.Text = "Guardar";
+            this.mnuItemGuardar.Click += new System.EventHandler(this.mnuItemGuardar_Click);
             // 
             // FrmListadoPedidos
             // 
@@ -146,6 +189,7 @@ namespace Vista
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(971, 632);
+            this.Controls.Add(this.mnuArchivos);
             this.Controls.Add(this.lblGanancias);
             this.Controls.Add(this.lblGananciasTexto);
             this.Controls.Add(this.btnVolver);
@@ -159,6 +203,8 @@ namespace Vista
             this.Text = "Listado Pedidos";
             this.Load += new System.EventHandler(this.FrmListadoPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgListado)).EndInit();
+            this.mnuArchivos.ResumeLayout(false);
+            this.mnuArchivos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +219,9 @@ namespace Vista
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label lblGananciasTexto;
         private System.Windows.Forms.Label lblGanancias;
+        private System.Windows.Forms.MenuStrip mnuArchivos;
+        private System.Windows.Forms.ToolStripMenuItem mnuToolStripArchivos;
+        private System.Windows.Forms.ToolStripMenuItem mnuItemAbrir;
+        private System.Windows.Forms.ToolStripMenuItem mnuItemGuardar;
     }
 }

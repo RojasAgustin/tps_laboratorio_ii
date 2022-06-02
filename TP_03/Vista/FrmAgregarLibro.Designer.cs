@@ -322,7 +322,7 @@ namespace Vista
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAgregarLibro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Libro";
             this.Load += new System.EventHandler(this.FrmAgregarLibro_Load);
             this.ResumeLayout(false);

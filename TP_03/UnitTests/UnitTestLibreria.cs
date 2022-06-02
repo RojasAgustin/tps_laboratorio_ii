@@ -1,5 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Entidades;
+using System.Collections.Generic;
+using System;
+
 namespace UnitTests
 {
     [TestClass]
@@ -80,6 +83,19 @@ namespace UnitTests
             noEstaIncluido = libreria != comic;
             //Assert
             Assert.IsTrue(noEstaIncluido);
+        }
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void AbrirArchivoLibreria_MalNoEncontrado()
+        {
+            //Arrange
+            Libreria<Libro> libreria = new Libreria<Libro>(3);
+            List<Libro> auxLista = new List<Libro>();
+            //Act Y Assert
+            if(libreria.Leer("abc.xml",out auxLista))
+            {
+                libreria.Lista = auxLista;
+            }
         }
 
     }

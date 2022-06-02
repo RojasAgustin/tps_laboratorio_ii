@@ -15,17 +15,35 @@ namespace Vista
     public partial class FrmAgregarLibro : Form
     {
         Libreria<Libro> libreria;
+
+        /// <summary>
+        /// Constructor del formulario 
+        /// </summary>
+        /// <param name="libreria"></param>
         public FrmAgregarLibro(Libreria<Libro> libreria)
         {
             InitializeComponent();
             this.libreria = libreria;
         }
 
+        /// <summary>
+        /// Metodo de la etapa Load del formulario.
+        /// Llama al metodo del radio button de novela
+        /// para que el formulario comience con los campos
+        /// de novela.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmAgregarLibro_Load(object sender, EventArgs e)
         {
             this.rbtnNovela_CheckedChanged(sender, e);
         }
 
+        /// <summary>
+        /// Cambia a los campos del tipo Novela
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbtnNovela_CheckedChanged(object sender, EventArgs e)
         {
             //Genero
@@ -48,11 +66,16 @@ namespace Vista
             this.cboIdioma.Items.Add("Otro");
             this.cboIdioma.Show();
 
-            //Hardcover
+            //Booleano
             this.lblBooleano.Text = "HARDCOVER";
             this.cbBooleano.Show();
         }
 
+        /// <summary>
+        /// Cambia a los campos del tipo Comic
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbtnComic_CheckedChanged(object sender, EventArgs e)
         {
             //Categoria     
@@ -70,11 +93,16 @@ namespace Vista
             this.cboIdioma.Hide();
             this.lblIdioma.Text = "";
 
-            //Hardcover
+            //Booleano
             this.lblBooleano.Text = "A COLOR";
             this.cbBooleano.Show();
         }
 
+        /// <summary>
+        /// Cambia a los campos del tipo NoFiccion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbtnNoFiccion_CheckedChanged(object sender, EventArgs e)
         {
             //Tematica
@@ -90,21 +118,32 @@ namespace Vista
             this.cboClasificacion.Items.Add("Academico");
             this.cboClasificacion.Items.Add("Otro");
 
-            
+            //Idioma
             this.cboIdioma.Hide();
             this.lblIdioma.Text = "";
 
+            //Booleano
             this.cbBooleano.Hide();
             this.lblBooleano.Text = "";
         }
 
+        /// <summary>
+        /// Llama al metodo de la etapa FormClosing
+        /// para cerrar el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         
-
+        /// <summary>
+        /// Agrega un libro a la lista y cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (this.ValidarCampos())
@@ -124,6 +163,7 @@ namespace Vista
                     if(MessageBox.Show($"Estas seguro de querer agregar la novela:\n\"{titulo}\" de {autor} ({editorial})?","Confirmar",MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         this.libreria.Lista.Add(novela);
+                        this.Close();
                     }
                 }
                 else
@@ -137,6 +177,7 @@ namespace Vista
                         if (MessageBox.Show($"Estas seguro de querer agregar el comic:\n\"{titulo}\" de {autor} ({editorial})?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
                             this.libreria.Lista.Add(comic);
+                            this.Close();
                         }
                     }
                     else
@@ -149,13 +190,18 @@ namespace Vista
                             if (MessageBox.Show($"Estas seguro de querer agregar el libro:\n\"{titulo}\" de {autor} ({editorial})?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                             {
                                 this.libreria.Lista.Add(noficcion);
+                                this.Close();
                             }
                         }
                     }
                 }
-                this.Close();
             }
         }
+        /// <summary>
+        /// Valida que todos los campos no esten vacios/sean validos.
+        /// De no ser asi muestra cuales estan mal
+        /// </summary>
+        /// <returns></returns>
         private bool ValidarCampos()
         {
             bool esValido = true;

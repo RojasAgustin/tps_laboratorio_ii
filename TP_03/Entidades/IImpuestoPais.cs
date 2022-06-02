@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    interface IImpuestoPais
+    
+    public interface IImpuestoPAIS
     {
-        public double CalcularImpuesto();
+        /// <summary>
+        /// Metodo para aplicar el impuesto PAIS.
+        /// Devuelve el valor del impuesto.
+        /// </summary>
+        /// <returns></returns>
+        double CalcularImpuesto();
     }
 }

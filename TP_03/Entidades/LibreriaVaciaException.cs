@@ -11,7 +11,7 @@ namespace Entidades
 
         /// <summary>
         /// Constructor de la excepcion que reutiliza 
-        /// la otra sobrecarga, con un mensaje 
+        /// la otra sobrecarga, con un mensaje particular
         /// y usando null como InnerException
         /// </summary>
         public LibreriaVaciaException() : this("La biblioteca esta vacia", null)

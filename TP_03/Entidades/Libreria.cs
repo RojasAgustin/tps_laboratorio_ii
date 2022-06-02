@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
-    public class Libreria<T> where T : Libro
+    public class Libreria<T>: IArchivos<List<Libro>> 
+        where T : Libro
     {
         private int capacidadMaxima;
         private List<T> lista;
@@ -27,13 +31,17 @@ namespace Entidades
             this.capacidadMaxima = capacidadMaxima;
         }
         /// <summary>
-        /// Propiedad de solo lectura de la lista generica
+        /// Propiedad de la lista generica
         /// </summary>
         public List<T> Lista
         {
             get
             {
                 return this.lista;
+            }
+            set
+            {
+                this.lista = value;
             }
         }
         /// <summary>
@@ -50,6 +58,8 @@ namespace Entidades
                 this.capacidadMaxima = value;
             }
         }
+
+
         /// <summary>
         /// Metodo publico de ordenamiento que llama a 
         /// un metodo de ordenamiento segun el criterio
@@ -212,6 +222,66 @@ namespace Entidades
         public override string ToString()
         {
             return Libreria<T>.Mostrar(this);
+        }
+
+        /// <summary>
+        /// Implementacion del metodo de guardar de la interfaz IArchivos
+        /// trabajando con un documento .xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="lista"></param>
+        /// <returns></returns>
+        public bool Guardar(string path,List<Libro> lista)
+        {
+            bool pudoGuardar = false;
+            try
+            {
+                using (XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8))
+                {
+                    XmlSerializer ser = new XmlSerializer(typeof(List<Libro>));
+                    ser.Serialize(writer, lista);
+                    pudoGuardar = true;
+                }
+            }
+            catch(Exception)
+            {
+                throw new Exception("Error al guardar la libreria en formato XML");
+            }
+            return pudoGuardar;
+        }
+
+        /// <summary>
+        /// Implementacion del metodo de leer de la interfaz IArchivos
+        /// trabajando con un documento .xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="lista"></param>
+        /// <returns></returns>
+        public bool Leer(string path,out List<Libro> lista)
+        {
+            bool pudoLeer = false;
+            lista = default;
+            try
+            {
+                if(path is not null)
+                {
+                    using (XmlTextReader reader = new XmlTextReader(path))
+                    {
+                        XmlSerializer ser = new XmlSerializer(typeof(List<Libro>));
+                        lista = (List<Libro>)ser.Deserialize(reader);
+                    }
+                    pudoLeer = true;
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                throw new FileNotFoundException("No se encontro el archivo .XML");
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error al leer el archivo de la libreria en formato XML");
+            }
+            return pudoLeer;
         }
     }
 }

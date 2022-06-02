@@ -15,12 +15,24 @@ namespace Vista
     {
         private Listado listado;
         private Libro compra;
+
+        /// <summary>
+        /// Constructor del formulario
+        /// </summary>
+        /// <param name="listado"></param>
+        /// <param name="compra"></param>
         public FrmAgregarPedido(Listado listado,Libro compra)
         {
             InitializeComponent();
             this.listado = listado;
             this.compra = compra;
         }
+
+        /// <summary>
+        /// Agrega un pedido al listado y cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (this.ValidarCampos())
@@ -43,6 +55,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que todos los campos no esten vacios/sean validos.
+        /// De no ser asi muestra cuales estan mal
+        /// </summary>
+        /// <returns></returns>
         private bool ValidarCampos()
         {
             bool esValido = true;
@@ -83,6 +100,10 @@ namespace Vista
             return esValido;
         }
 
+        /// <summary>
+        /// Valida que el correo sea valido
+        /// </summary>
+        /// <returns></returns>
         private bool validarCorreo()
         {
             bool esValido = false;
@@ -92,6 +113,11 @@ namespace Vista
             }
             return esValido;
         }
+        /// <summary>
+        /// Cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Entidades
@@ -33,6 +34,7 @@ namespace Entidades
         /// <param name="direccion"></param>
         /// <param name="telefono"></param>
         /// <param name="compra"></param>
+        
         public Cliente(string nombre,string apellido,string correo,string direccion,string telefono,Libro compra)
         {
             this.nombre = nombre;
@@ -155,6 +157,7 @@ namespace Entidades
             str.AppendLine($"Telefono: {this.telefono}");
             str.AppendLine($"Codigo: {this.codigo}");
             str.AppendLine($"Tipo de compra: {this.compra.Tipo}");
+            str.AppendLine($"Compra: \"{this.compra.Titulo}\" de {this.compra.Autor}");
 
             return str.ToString();
         }

@@ -1,30 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
-    public class Listado
+    public class Listado : IArchivos<List<Cliente>>
     {
         private List<Cliente> listaClientes;
 
         /// <summary>
         /// Constructor de la clase que inicaliza la lista de pedidos
         /// </summary>
+        /// 
         public Listado()
         {
             this.listaClientes = new List<Cliente>();
         }
         /// <summary>
-        /// Propiedad de solo lectura de la lista de pedidos
+        /// Propiedad de la lista de pedidos
         /// </summary>
         public List<Cliente> ListaClientes
         {
             get
             {
                 return this.listaClientes;
+            }
+            set
+            {
+                this.listaClientes = value;
             }
         }
         /// <summary>
@@ -180,6 +188,66 @@ namespace Entidades
         public override string ToString()
         {
             return Listado.Mostrar(this);
+        }
+
+        /// <summary>
+        /// Implementacion del metodo de guardar de la interfaz IArchivos
+        /// trabajando con un documento .xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="lista"></param>
+        /// <returns></returns>
+        public bool Guardar(string path, List<Cliente> lista)
+        {
+            bool pudoGuardar = false;
+            try
+            {
+                using (XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8))
+                {
+                    XmlSerializer ser = new XmlSerializer(typeof(List<Cliente>));
+                    ser.Serialize(writer, lista);
+                    pudoGuardar = true;
+                }
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error al guardar el listado de pedidos en formato XML");
+            }
+            return pudoGuardar;
+        }
+
+        /// <summary>
+        /// Implementacion del metodo de leer de la interfaz IArchivos
+        /// trabajando con un documento .xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="lista"></param>
+        /// <returns></returns>
+        public bool Leer(string path, out List<Cliente> lista)
+        {
+            bool pudoLeer = false;
+            lista = default;
+            try
+            {
+                if (path is not null)
+                {
+                    using (XmlTextReader reader = new XmlTextReader(path))
+                    {
+                        XmlSerializer ser = new XmlSerializer(typeof(List<Cliente>));
+                        lista = (List<Cliente>)ser.Deserialize(reader);
+                    }
+                    pudoLeer = true;
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                throw new FileNotFoundException("No se encontro el archivo .XML");
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error al leer el archivo del listado de pedidos en formato XML");
+            }
+            return pudoLeer;
         }
     }
 }
