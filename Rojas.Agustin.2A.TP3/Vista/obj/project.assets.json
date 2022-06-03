@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\Vista\\Vista.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\TP_03\\Vista\\Vista.csproj",
       "projectName": "Vista",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\Vista\\Vista.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\TP_03\\Vista\\Vista.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\Vista\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\TP_03\\Vista\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\ControlesDeUsuario\\ControlesDeUsuario.csproj"
+            "C:\\Users\\Usuario\\source\\repos\\TP_03\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\TP_03\\ControlesDeUsuario\\ControlesDeUsuario.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Usuario\\source\\repos\\TP_03\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\TP_03\\Entidades\\Entidades.csproj"
             }
           }
         }

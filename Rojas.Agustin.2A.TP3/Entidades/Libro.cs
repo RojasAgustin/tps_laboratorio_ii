@@ -142,14 +142,14 @@ namespace Entidades
 
         /// <summary>
         /// Compara dos libros y verifica que sean iguales
-        /// siempre y cuando tengan el mismo autor, titulo y precio
+        /// siempre y cuando tengan el mismo autor, titulo
         /// </summary>
         /// <param name="l1">El primer libro</param>
         /// <param name="l2">El segundo libro</param>
         /// <returns></returns>
         public static bool operator ==(Libro l1,Libro l2)
         {
-            return l1.autor == l2.autor && l1.titulo == l2.titulo && l1.precio == l2.precio;
+            return l1.autor == l2.autor && l1.titulo == l2.titulo;
         }
         /// <summary>
         /// Compara que dos libros sean distintos reutilizando el codigo 

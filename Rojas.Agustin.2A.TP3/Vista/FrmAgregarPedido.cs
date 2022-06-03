@@ -45,7 +45,7 @@ namespace Vista
                 Cliente cliente = new Cliente(nombre,apellido,correo,direccion,telefono,this.compra);
                 try
                 {
-                    this.listado.ListaClientes.Add(cliente);
+                    this.listado += cliente;
                 }
                 catch (PedidoInvalidoException f)
                 {

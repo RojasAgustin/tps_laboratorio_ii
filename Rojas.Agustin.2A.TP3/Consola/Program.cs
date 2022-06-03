@@ -14,6 +14,7 @@ namespace Consola
 
             Comic comic = new Comic("X-Men #01", "Stan Lee", 20, 25, "Marvel", ECategoria.Americano, true);
             Comic comic2 = new Comic("Dragon Ball Vol. 3", "Akira Toriyama", 160, 51, "VIZ Media LLC", ECategoria.Manga, false);
+            Comic comic3 = new Comic("Dragon Ball Vol. 3", "Akira Toriyama", 424, 21, "VIZ Media LLC", ECategoria.Manga, true);
 
             NoFiccion noFiccion = new NoFiccion("Meditaciones", "Marco Aurelio", 50, 176, "Daniel Ochoa Editor", ETematica.Filosofia);
             NoFiccion noFiccion2 = new NoFiccion("Yo sé por qué canta el pájaro enjaulado", "Maya Angelou", 80, 321, "Random House", ETematica.Biografia);
@@ -53,6 +54,7 @@ namespace Consola
             libreria += novela4;
             libreria += noFiccion;
             libreria += noFiccion2;
+            libreria += comic3;
 
             Console.WriteLine(libreria);
             Console.ReadLine();

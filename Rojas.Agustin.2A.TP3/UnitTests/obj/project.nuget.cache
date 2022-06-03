@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wSeXyQp+tOfMe+AZfCmf7B47tFoZqoy/ae2vhc1T/AgZi2ljFCBvWAKfMyZdt/dkcxAcNxc4M+YvHecV/sgJNg==",
+  "dgSpecHash": "0KSOj2CeRByI1BM5YV4mfJ84fJJDhCR1kfcz5VxmbmfGEcblxnHxQH6cE/mNqqyuGsWZ4D0+3u6tBYnvnuSFtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\Rojas.Agustin.2A.TP3\\UnitTests\\UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\TP_03\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

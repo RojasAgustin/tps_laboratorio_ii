@@ -162,7 +162,7 @@ namespace Vista
                     Novela novela = new Novela(titulo, autor, precio, paginas, editorial, genero, idioma, hardcover);
                     if(MessageBox.Show($"Estas seguro de querer agregar la novela:\n\"{titulo}\" de {autor} ({editorial})?","Confirmar",MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        this.libreria.Lista.Add(novela);
+                        this.libreria += novela;
                         this.Close();
                     }
                 }
@@ -176,7 +176,7 @@ namespace Vista
                         Comic comic = new Comic(titulo, autor, precio, paginas, editorial, categoria, color);
                         if (MessageBox.Show($"Estas seguro de querer agregar el comic:\n\"{titulo}\" de {autor} ({editorial})?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            this.libreria.Lista.Add(comic);
+                            this.libreria += comic;
                             this.Close();
                         }
                     }
@@ -189,7 +189,7 @@ namespace Vista
                             NoFiccion noficcion = new NoFiccion(titulo, autor, precio, paginas, editorial, tematica);
                             if (MessageBox.Show($"Estas seguro de querer agregar el libro:\n\"{titulo}\" de {autor} ({editorial})?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                             {
-                                this.libreria.Lista.Add(noficcion);
+                                this.libreria += noficcion;
                                 this.Close();
                             }
                         }

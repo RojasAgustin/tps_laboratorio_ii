@@ -303,9 +303,16 @@ namespace Vista
             {
                 try
                 {
-                    if (this.libreria.Guardar("LibreriaSerializada.xml", this.libreria.Lista))
+                    if (this.libreria.Lista.Count > 0)
                     {
-                        MessageBox.Show("Archivo guardado con exito");
+                        if (this.libreria.Guardar("LibreriaSerializada.xml", this.libreria.Lista))
+                        {
+                            MessageBox.Show("Archivo guardado con exito");
+                        }
+                    }
+                    else
+                    {
+                        throw new LibreriaVaciaException("La libreria esta vacia",null);
                     }
                 }
                 catch (Exception f)
