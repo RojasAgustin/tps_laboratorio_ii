@@ -51,7 +51,7 @@ namespace Vista
             }
             catch (Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
             //Listado de pedidos inicial
             try
@@ -65,7 +65,7 @@ namespace Vista
             }
             catch (Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
 
             //Listado
@@ -160,7 +160,7 @@ namespace Vista
             }
             else
             {
-                MessageBox.Show("No hay mas espacio para libros","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No hay mas espacio para libros","Libreria Llena", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -185,7 +185,7 @@ namespace Vista
             }
             catch(Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
         }
 
@@ -214,7 +214,7 @@ namespace Vista
             }
             catch(Exception f)
             {
-                MessageBox.Show(f.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
             
         }
@@ -241,7 +241,7 @@ namespace Vista
             }
             catch(Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
         }
 
@@ -260,7 +260,7 @@ namespace Vista
             }
             else
             {
-                MessageBox.Show("No hay pedidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No hay pedidos", "Listado vacio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -286,7 +286,7 @@ namespace Vista
                 }
                 catch (Exception f)
                 {
-                    MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.MostrarVentanaDeError(f);
                 }
             }
         }
@@ -317,9 +317,17 @@ namespace Vista
                 }
                 catch (Exception f)
                 {
-                    MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.MostrarVentanaDeError(f);
                 }
             }
+        }
+        /// <summary>
+        /// Muestra un message box con el error
+        /// </summary>
+        /// <param name="ex"></param>
+        private void MostrarVentanaDeError(Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

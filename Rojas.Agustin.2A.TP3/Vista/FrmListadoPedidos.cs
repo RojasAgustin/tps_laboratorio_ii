@@ -126,7 +126,7 @@ namespace Vista
             }
             catch (Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
         }
 
@@ -154,7 +154,7 @@ namespace Vista
             }
             catch (Exception f)
             {
-                MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.MostrarVentanaDeError(f);
             }
         }
 
@@ -177,7 +177,7 @@ namespace Vista
                 }
                 catch (Exception f)
                 {
-                    MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.MostrarVentanaDeError(f);
                 }
             }
         }
@@ -204,9 +204,17 @@ namespace Vista
                 }
                 catch (Exception f)
                 {
-                    MessageBox.Show(f.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.MostrarVentanaDeError(f);
                 }
             }
+        }
+        /// <summary>
+        /// Muestra un message box con el error
+        /// </summary>
+        /// <param name="ex"></param>
+        private void MostrarVentanaDeError(Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
