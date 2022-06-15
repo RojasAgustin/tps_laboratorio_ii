@@ -111,11 +111,11 @@ namespace Vista
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTelefono.Location = new System.Drawing.Point(12, 111);
+            this.lblTelefono.Location = new System.Drawing.Point(12, 104);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(65, 15);
+            this.lblTelefono.Size = new System.Drawing.Size(70, 30);
             this.lblTelefono.TabIndex = 26;
-            this.lblTelefono.Text = "TELEFONO";
+            this.lblTelefono.Text = "TELEFONO/\r\nCELULAR";
             // 
             // txtCorreo
             // 
@@ -132,9 +132,9 @@ namespace Vista
             this.lblCorreo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCorreo.Location = new System.Drawing.Point(324, 71);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(57, 15);
+            this.lblCorreo.Size = new System.Drawing.Size(50, 15);
             this.lblCorreo.TabIndex = 28;
-            this.lblCorreo.Text = "CORREO:";
+            this.lblCorreo.Text = "E-MAIL:";
             // 
             // btnAgregar
             // 

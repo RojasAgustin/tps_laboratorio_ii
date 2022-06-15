@@ -1,0 +1,69 @@
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.exe
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.deps.json
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.runtimeconfig.json
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.dll
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Entidades.dll
+C:\Users\Usuario\source\repos\TP_03\Consola\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.csproj.CopyComplete
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.dll
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\source\repos\TP_03\Consola\obj\Debug\net5.0\Consola.genruntimeconfig.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.exe
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.deps.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.runtimeconfig.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.runtimeconfig.dev.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.AssemblyInfo.cs
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.csproj.CopyComplete
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\obj\Debug\net5.0\Consola.genruntimeconfig.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Consola\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.exe
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.deps.json
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.runtimeconfig.json
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Entidades.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.csproj.CopyComplete
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\ref\Consola.dll
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.pdb
+C:\Users\Usuario\source\repos\TP_04\Consola\obj\Debug\net5.0\Consola.genruntimeconfig.cache

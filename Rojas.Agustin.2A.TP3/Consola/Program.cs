@@ -21,29 +21,29 @@ namespace Consola
 
 
 
-            /*Archivo ListadoPedidoInicial
+           
             
-            //Cliente cliente1 = new Cliente("Williams","Dumais", "wildumai@gmail.com", "Bv. Pedro Ignacio Castro Barros 897", "113371742",noFiccion2);
-            //Cliente cliente2 = new Cliente("Gonzalo","Martinez","pitym@hotmail.com", "Gorriti Gral Jose Ignacio 878","1557332218",comic2);
-            //Cliente cliente3 = new Cliente("Victoria", "Corona", "vc4881@gmail.com", "Av. Almafuerte 677", "518582414", novela2);
+            Cliente cliente1 = new Cliente("Williams","Dumais", "wildumai@gmail.com", "Bv. Pedro Ignacio Castro Barros 897", "113371742",noFiccion2.Precio,noFiccion2.Titulo);
+            Cliente cliente2 = new Cliente("Gonzalo","Martinez","pitym@hotmail.com", "Gorriti Gral Jose Ignacio 878","1557332218",comic2.Precio,comic2.Titulo);
+            Cliente cliente3 = new Cliente("Victoria", "Corona", "vc4881@gmail.com", "Av. Almafuerte 677", "518582414", novela2.Precio,novela2.Titulo);
 
-            //Listado listado = new Listado();
-            //List<Cliente> lista = new List<Cliente>();
+            Listado listado = new Listado();
+            List<Cliente> lista = new List<Cliente>();
 
             listado += cliente1;
             listado += cliente2;
             listado += cliente3;
 
-            listado.Guardar("ListadoPedidosInicial.xml", listado.ListaClientes);
+            //listado.Guardar("ListadoPedidosInicial.xml", listado.ListaClientes);
 
-            listado.Leer("ListadoInicial.xml", out lista);
+            listado.Leer("ListadoPedidosInicial.xml", out lista);
             listado.ListaClientes = lista;
-            Console.WriteLine(listado);*/
+            Console.WriteLine(listado);
 
 
             ///*Archivo LibreriaInicial
 
-            Libreria<Libro> libreria = new Libreria<Libro>(10);
+            /*Libreria<Libro> libreria = new Libreria<Libro>(10);
             List<Libro> lista = new List<Libro>();
 
             libreria += comic;
@@ -57,10 +57,10 @@ namespace Consola
             libreria += comic3;
 
             Console.WriteLine(libreria);
-            Console.ReadLine();
+            Console.ReadLine();*/
            
 
-            libreria.Guardar("LibreriaInicial.xml",libreria.Lista);
+            //libreria.Guardar("LibreriaInicial.xml",libreria.Lista);
 
             //libreria.Leer("LibreriaInicial.xml",out lista);
             //libreria.Lista = lista;

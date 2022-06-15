@@ -53,9 +53,9 @@ namespace Vista
 
             //Criterios de ordenamiento
             this.cboOrdenar.Items.Add("NOMBRE");
+            this.cboOrdenar.Items.Add("PRECIO");
             this.cboOrdenar.Items.Add("CODIGO");
-            this.cboOrdenar.Items.Add("CORREO");
-            this.cboOrdenar.SelectedItem = "NOMBRE";
+            this.cboOrdenar.SelectedItem = "CODIGO";
 
             //label Ganancias
             this.lblGanancias.Text = this.ganancias.ToString();
@@ -95,11 +95,11 @@ namespace Vista
                 case "NOMBRE":
                     this.listado.OrdenarClientes(EOrdenamientoCliente.OrdenarPorNombre);
                     break;
+                case "PRECIO":
+                    this.listado.OrdenarClientes(EOrdenamientoCliente.OrdenarPorPrecio);
+                    break;
                 case "CODIGO":
                     this.listado.OrdenarClientes(EOrdenamientoCliente.OrdenarPorCodigo);
-                    break;
-                case "CORREO":
-                    this.listado.OrdenarClientes(EOrdenamientoCliente.OrdenarPorCorreo);
                     break;
             }
             this.RefrescarDataGrid();
@@ -144,7 +144,7 @@ namespace Vista
                 {
                     Cliente aux = (Cliente)this.dgListado.SelectedRows[0].DataBoundItem;
                     this.listado -= aux;
-                    this.ganancias += (int)aux.Compra.Precio;
+                    this.ganancias += (int)aux.PrecioCompra;
                     this.RefrescarDataGrid();                    
                 }
                 else

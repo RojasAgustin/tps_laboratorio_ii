@@ -62,16 +62,36 @@ namespace Entidades
         {
             switch (o)
             {
+                case EOrdenamientoCliente.OrdenarPorPrecio:
+                    this.listaClientes.Sort(OrdenarPorPrecio);
+                    break;
                 case EOrdenamientoCliente.OrdenarPorCodigo:
                     this.listaClientes.Sort(OrdenarPorCodigo);
-                    break;
-                case EOrdenamientoCliente.OrdenarPorCorreo:
-                    this.listaClientes.Sort(OrdenarPorCorreo);
                     break;
                 case EOrdenamientoCliente.OrdenarPorNombre:
                     this.listaClientes.Sort(OrdenarPorNombre);
                     break;
             }
+        }
+        /// <summary>
+        /// Ordena dos clientes de la lista  por 
+        /// sus atributos precio
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        private static int OrdenarPorPrecio(Cliente a, Cliente b)
+        {
+            int rt = 0;
+            if (a.PrecioCompra > b.PrecioCompra)
+            {
+                rt = -1;
+            }
+            else if (a.PrecioCompra < b.PrecioCompra)
+            {
+                rt = 1;
+            }
+            return rt;
         }
         /// <summary>
         /// Ordena dos clientes de la lista  por 
@@ -92,17 +112,6 @@ namespace Entidades
                 rt = -1;
             }
             return rt;
-        }
-        /// <summary>
-        /// Ordena dos clientes de la lista  por 
-        /// sus atributos correo
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        private static int OrdenarPorCorreo(Cliente a, Cliente b)
-        {
-            return String.Compare(a.Correo, b.Correo);
         }
         /// <summary>
         /// Ordena dos clientes de la lista  por 
@@ -154,7 +163,7 @@ namespace Entidades
         /// <returns></returns>
         public static Listado operator +(Listado l,Cliente c)
         {
-            if (c.Compra is not null)
+            if (c.TituloCompra is not null && c.PrecioCompra > 0)
             {
                 l.listaClientes.Add(c);
             }

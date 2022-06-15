@@ -15,8 +15,9 @@ namespace Entidades
         private string correo;
         private string direccion;
         private string telefono;
+        private double precioCompra;
+        private string tituloCompra;
         private int codigo;
-        private Libro compra;
         /// <summary>
         /// Constructor por defecto de la clase 
         /// para serializacion
@@ -33,17 +34,19 @@ namespace Entidades
         /// <param name="correo"></param>
         /// <param name="direccion"></param>
         /// <param name="telefono"></param>
-        /// <param name="compra"></param>
-        
-        public Cliente(string nombre,string apellido,string correo,string direccion,string telefono,Libro compra)
+        /// <param name="precio"></param>
+        /// <param name="titulo"></param>
+
+        public Cliente(string nombre,string apellido,string correo,string direccion,string telefono,double precio,string titulo)
         {
+            this.codigo = new Random().Next(0, 99999);
             this.nombre = nombre;
             this.apellido = apellido;
             this.correo = correo;
             this.direccion = direccion;
             this.telefono = telefono;
-            this.codigo = new Random().Next(0, 9999);
-            this.compra = compra;
+            this.precioCompra = precio;
+            this.tituloCompra = titulo;
         }
         /// <summary>
         /// Propiedad l/e del atributo codigo
@@ -130,17 +133,31 @@ namespace Entidades
             }
         }
         /// <summary>
-        /// Propiedad l/e del atributo compra
+        /// Propiedad l/e del atributo precioCompra
         /// </summary>
-        public Libro Compra
+        public double PrecioCompra
         {
             get
             {
-                return this.compra;
+                return this.precioCompra;
             }
             set
             {
-                this.compra = value;
+                this.precioCompra = value;
+            }
+        }
+        /// <summary>
+        /// Propiedad l/e del atributo tituloCompra
+        /// </summary>
+        public string TituloCompra
+        {
+            get
+            {
+                return this.tituloCompra;
+            }
+            set
+            {
+                this.tituloCompra = value;
             }
         }
         /// <summary>
@@ -150,14 +167,14 @@ namespace Entidades
         private string Mostrar()
         {
             StringBuilder str = new StringBuilder();
-
+           
+            str.AppendLine($"Codigo de compra: {this.codigo}");
             str.AppendLine($"Nombre: {this.nombre} {this.apellido}");
             str.AppendLine($"Correo: {this.correo}");
             str.AppendLine($"Direccion: {this.direccion}");
             str.AppendLine($"Telefono: {this.telefono}");
-            str.AppendLine($"Codigo: {this.codigo}");
-            str.AppendLine($"Tipo de compra: {this.compra.Tipo}");
-            str.AppendLine($"Compra: \"{this.compra.Titulo}\" de {this.compra.Autor}");
+            str.AppendLine($"Precio de compra: {this.precioCompra:C}");
+            str.AppendLine($"Titulo de compra: \"{this.tituloCompra}\"");
 
             return str.ToString();
         }
@@ -184,7 +201,6 @@ namespace Entidades
             }
             return rta;
         }
-
 
     }
 }

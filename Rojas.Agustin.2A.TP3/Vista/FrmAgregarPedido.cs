@@ -42,7 +42,7 @@ namespace Vista
                 string correo = this.txtCorreo.Text;
                 string direccion = this.txtDireccion.Text;
                 string telefono = this.txtTelefono.Texto;
-                Cliente cliente = new Cliente(nombre,apellido,correo,direccion,telefono,this.compra);
+                Cliente cliente = new Cliente(nombre,apellido,correo,direccion,telefono,this.compra.Precio,this.compra.Titulo);
                 try
                 {
                     this.listado += cliente;
@@ -85,12 +85,12 @@ namespace Vista
             if (string.IsNullOrWhiteSpace(txtCorreo.Text) || !this.validarCorreo())
             {
                 esValido = false;
-                str.AppendLine("El correo");
+                str.AppendLine("El correo electronico (con @ y terminando en .com)");
             }
             if (string.IsNullOrWhiteSpace(txtTelefono.Texto) || txtTelefono.Texto.Length < 8)
             {
                 esValido = false;
-                str.AppendLine("El telefono");
+                str.AppendLine("El telefono/celular (debe ser mayor a 7 digitos/solo numeros)");
             }
 
             if (!esValido)

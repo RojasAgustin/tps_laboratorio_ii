@@ -45,7 +45,6 @@ namespace Vista
                 if(this.libreria.Leer("LibreriaInicial.xml",out auxListaLibros))
                 {
                     this.libreria.Lista = auxListaLibros;
-                    MessageBox.Show("Libreria cargada con exito","Archivo inicial libreria",MessageBoxButtons.OK,MessageBoxIcon.None);
                 }
                 
             }
@@ -60,7 +59,6 @@ namespace Vista
                 if (this.listado.Leer("ListadoPedidosInicial.xml", out auxListaClientes))
                 {
                     this.listado.ListaClientes = auxListaClientes;
-                    MessageBox.Show("Listado cargado con exito", "Archivo inicial pedidos", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
             catch (Exception f)
