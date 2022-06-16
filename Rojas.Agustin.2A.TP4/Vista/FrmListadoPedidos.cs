@@ -18,6 +18,7 @@ namespace Vista
         private Listado databaseListado;
         private double ganancias;
         private ClienteDAO dao;
+        private string codigoDescuento;
 
         /// <summary>
         /// Constructor del formulario
@@ -341,11 +342,38 @@ namespace Vista
             }
             return estaIncluido;
         }
-
+        /// <summary>
+        /// Muestra los detalles de la venta
+        /// Con o sin codigo de descuento
+        /// </summary>
+        /// <param name="cliente"></param>
         private void InformarVentaExitosa(Cliente cliente)
         {
-            MessageBox.Show($"Venta confirmada:\n{cliente}","Venta exitosa",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            string mensajeCodigo = "";
+            if(!string.IsNullOrEmpty(this.codigoDescuento))
+            {
+                cliente.PrecioCompra -= cliente.PrecioCompra  * 0.2;
+                mensajeCodigo = $"Codigo de descuento: {this.codigoDescuento}";
+                this.codigoDescuento = "";
+            }
+            MessageBox.Show($"Venta confirmada:\n{cliente}{mensajeCodigo}","Venta exitosa",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
-        
+
+        /// <summary>
+        /// Invoca al formulario del codigo de descuento 
+        /// y asigna el atributo codigoDescuento
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbCodigoDescuento_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCodigoDescuento.CheckState == CheckState.Checked)
+            {
+                FrmCodigoDescuento frmCodigoDescuento = new FrmCodigoDescuento(this.codigoDescuento);
+                frmCodigoDescuento.ShowDialog();
+                this.codigoDescuento = frmCodigoDescuento.codigo;
+                this.cbCodigoDescuento.Checked = false;
+            }
+        }
     }
 }

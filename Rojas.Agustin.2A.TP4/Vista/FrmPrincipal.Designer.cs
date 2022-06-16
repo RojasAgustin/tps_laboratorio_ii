@@ -41,6 +41,7 @@ namespace Vista
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemGuardar = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReclamo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgLibreria)).BeginInit();
             this.mnuArchivos.SuspendLayout();
             this.SuspendLayout();
@@ -212,12 +213,30 @@ namespace Vista
             this.mnuItemGuardar.Text = "Guardar";
             this.mnuItemGuardar.Click += new System.EventHandler(this.mnuItemGuardar_Click);
             // 
+            // btnReclamo
+            // 
+            this.btnReclamo.BackColor = System.Drawing.Color.GhostWhite;
+            this.btnReclamo.CausesValidation = false;
+            this.btnReclamo.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnReclamo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReclamo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReclamo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReclamo.Location = new System.Drawing.Point(814, 123);
+            this.btnReclamo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReclamo.Name = "btnReclamo";
+            this.btnReclamo.Size = new System.Drawing.Size(194, 115);
+            this.btnReclamo.TabIndex = 10;
+            this.btnReclamo.Text = "ENVIAR RECLAMO";
+            this.btnReclamo.UseVisualStyleBackColor = false;
+            this.btnReclamo.Click += new System.EventHandler(this.btnReclamo_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1020, 601);
+            this.Controls.Add(this.btnReclamo);
             this.Controls.Add(this.mnuArchivos);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnSalir);
@@ -254,6 +273,7 @@ namespace Vista
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuItemAbrir;
         private System.Windows.Forms.ToolStripMenuItem mnuItemGuardar;
+        private System.Windows.Forms.Button btnReclamo;
     }
 }
 

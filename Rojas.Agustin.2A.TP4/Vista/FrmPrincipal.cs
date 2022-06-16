@@ -361,6 +361,16 @@ namespace Vista
         {
             MessageBox.Show($"Se elimino \"{titulo}\" de {autor}.","Libro eliminado",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
-        
+
+        /// <summary>
+        /// Invoca al formulario que permite enviar un reclamo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnReclamo_Click(object sender, EventArgs e)
+        {
+            FrmReclamo frmReclamo = new FrmReclamo(this.libreria);
+            frmReclamo.ShowDialog();
+        }
     }
 }

@@ -238,5 +238,30 @@ namespace Entidades
             }
             return pudoLeer;
         }
+
+        /// <summary>
+        /// Guarda el reclamo recibido como parametro
+        /// en un archivo txt cuya ruta es recibida por parametro
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="reclamo"></param>
+        /// <returns></returns>
+        public bool GuardarReclamo(string path,string reclamo)
+        {
+            bool pudoGuardar = false;
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(path,true))
+                {
+                    writer.WriteLine($"**************\n{reclamo}\n**************\n");
+                    pudoGuardar = true;
+                }
+            }
+            catch (Exception)
+            {
+                throw new Exception("Error al guardar el reclamo en el archivo");
+            }
+            return pudoGuardar;
+        }
     }
 }

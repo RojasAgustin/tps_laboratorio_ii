@@ -34,3 +34,15 @@ C:\Users\Usuario\source\repos\TP_04\Entidades\obj\Debug\net5.0\Entidades.csproj.
 C:\Users\Usuario\source\repos\TP_04\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\Usuario\source\repos\TP_04\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\Usuario\source\repos\TP_04\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Entidades\obj\Debug\net5.0\Entidades.pdb

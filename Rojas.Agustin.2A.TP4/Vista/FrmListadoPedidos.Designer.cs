@@ -45,6 +45,7 @@ namespace Vista
             this.btnModificarCliente = new System.Windows.Forms.Button();
             this.dbStatus = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusDB = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cbCodigoDescuento = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgListado)).BeginInit();
             this.dbStatus.SuspendLayout();
             this.SuspendLayout();
@@ -102,10 +103,10 @@ namespace Vista
             this.btnAtender.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAtender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAtender.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAtender.Location = new System.Drawing.Point(427, 578);
+            this.btnAtender.Location = new System.Drawing.Point(506, 573);
             this.btnAtender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtender.Name = "btnAtender";
-            this.btnAtender.Size = new System.Drawing.Size(119, 52);
+            this.btnAtender.Size = new System.Drawing.Size(119, 38);
             this.btnAtender.TabIndex = 6;
             this.btnAtender.Text = "ATENDER";
             this.btnAtender.UseVisualStyleBackColor = false;
@@ -119,10 +120,10 @@ namespace Vista
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnVolver.Location = new System.Drawing.Point(2, 580);
+            this.btnVolver.Location = new System.Drawing.Point(2, 573);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(114, 48);
+            this.btnVolver.Size = new System.Drawing.Size(114, 38);
             this.btnVolver.TabIndex = 5;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -133,18 +134,18 @@ namespace Vista
             this.lblGananciasTexto.AutoSize = true;
             this.lblGananciasTexto.BackColor = System.Drawing.Color.GhostWhite;
             this.lblGananciasTexto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblGananciasTexto.Location = new System.Drawing.Point(754, 592);
+            this.lblGananciasTexto.Location = new System.Drawing.Point(723, 581);
             this.lblGananciasTexto.Name = "lblGananciasTexto";
-            this.lblGananciasTexto.Size = new System.Drawing.Size(123, 25);
+            this.lblGananciasTexto.Size = new System.Drawing.Size(128, 25);
             this.lblGananciasTexto.TabIndex = 4;
-            this.lblGananciasTexto.Text = "Ganancias: $";
+            this.lblGananciasTexto.Text = "Ganancias:  $";
             // 
             // lblGanancias
             // 
             this.lblGanancias.AutoSize = true;
             this.lblGanancias.BackColor = System.Drawing.Color.GhostWhite;
             this.lblGanancias.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblGanancias.Location = new System.Drawing.Point(868, 592);
+            this.lblGanancias.Location = new System.Drawing.Point(846, 581);
             this.lblGanancias.Name = "lblGanancias";
             this.lblGanancias.Size = new System.Drawing.Size(0, 25);
             this.lblGanancias.TabIndex = 9;
@@ -240,17 +241,29 @@ namespace Vista
             // 
             this.dbStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusDB});
-            this.dbStatus.Location = new System.Drawing.Point(0, 610);
+            this.dbStatus.Location = new System.Drawing.Point(0, 614);
             this.dbStatus.Name = "dbStatus";
-            this.dbStatus.Size = new System.Drawing.Size(971, 22);
+            this.dbStatus.Size = new System.Drawing.Size(972, 22);
             this.dbStatus.TabIndex = 10;
             this.dbStatus.Visible = false;
             // 
             // toolStripStatusDB
             // 
-            this.toolStripStatusDB.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.toolStripStatusDB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.toolStripStatusDB.Name = "toolStripStatusDB";
             this.toolStripStatusDB.Size = new System.Drawing.Size(0, 17);
+            // 
+            // cbCodigoDescuento
+            // 
+            this.cbCodigoDescuento.AutoSize = true;
+            this.cbCodigoDescuento.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbCodigoDescuento.Location = new System.Drawing.Point(181, 577);
+            this.cbCodigoDescuento.Name = "cbCodigoDescuento";
+            this.cbCodigoDescuento.Size = new System.Drawing.Size(228, 29);
+            this.cbCodigoDescuento.TabIndex = 11;
+            this.cbCodigoDescuento.Text = "Codigo de descuento?";
+            this.cbCodigoDescuento.UseVisualStyleBackColor = true;
+            this.cbCodigoDescuento.CheckedChanged += new System.EventHandler(this.cbCodigoDescuento_CheckedChanged);
             // 
             // FrmListadoPedidos
             // 
@@ -258,8 +271,8 @@ namespace Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(971, 632);
-            this.Controls.Add(this.dbStatus);
+            this.ClientSize = new System.Drawing.Size(972, 636);
+            this.Controls.Add(this.cbCodigoDescuento);
             this.Controls.Add(this.btnModificarCliente);
             this.Controls.Add(this.btnBorrarCliente);
             this.Controls.Add(this.btnGuardarDB);
@@ -271,6 +284,7 @@ namespace Vista
             this.Controls.Add(this.cboOrdenar);
             this.Controls.Add(this.lblOrdenar);
             this.Controls.Add(this.dgListado);
+            this.Controls.Add(this.dbStatus);
             this.MaximizeBox = false;
             this.Name = "FrmListadoPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -301,5 +315,6 @@ namespace Vista
         private System.Windows.Forms.Button btnModificarCliente;
         private System.Windows.Forms.StatusStrip dbStatus;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusDB;
+        private System.Windows.Forms.CheckBox cbCodigoDescuento;
     }
 }
