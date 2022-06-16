@@ -48,19 +48,6 @@ namespace UnitTests
             //Assert
             Assert.IsTrue(listado != cliente);
         }
-        [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void AbrirArchivoListadoPedidos_MalNoEncontrado()
-        {
-            //Arrange
-            Listado listado = new Listado(); ;
-            List<Cliente> auxLista = new List<Cliente>();
-            //Act Y Assert
-            if (listado.Leer("abc.xml", out auxLista))
-            {
-                listado.ListaClientes = auxLista;
-            }
-        }
 
     }
 }
