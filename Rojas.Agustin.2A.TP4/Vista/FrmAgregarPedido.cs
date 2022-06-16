@@ -33,7 +33,7 @@ namespace Vista
 
         private void FrmAgregarPedido_Load(object sender, EventArgs e)
         {
-            this.lblPrecio.Text += $"{this.precioCompra}";
+            this.lblPrecio.Text += $"{this.precioCompra:C}";
             this.listado.EventoClienteAgregado += new DelegadoClienteAgregado(this.Listado_ClienteAgregadoEvent);
         }
 

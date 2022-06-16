@@ -129,7 +129,7 @@ namespace Entidades
                 {
                     pudoGuardar = false;
                     throw new Exception("Error al guardar el pedido en la base de datos. El titulo de la compra es demasiado largo\n" +
-                        "Lo hice con varchar(50) soy tonto");
+                        "Lo hice con varchar(200)");
                 }
                 catch (Exception)
                 {

@@ -178,9 +178,9 @@ namespace Vista
             this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrecio.Location = new System.Drawing.Point(324, 113);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(100, 15);
+            this.lblPrecio.Size = new System.Drawing.Size(90, 15);
             this.lblPrecio.TabIndex = 30;
-            this.lblPrecio.Text = "PRECIO TOTAL: $";
+            this.lblPrecio.Text = "PRECIO TOTAL:";
             // 
             // FrmAgregarPedido
             // 
