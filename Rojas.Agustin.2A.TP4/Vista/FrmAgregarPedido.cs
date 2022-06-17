@@ -34,7 +34,6 @@ namespace Vista
         private void FrmAgregarPedido_Load(object sender, EventArgs e)
         {
             this.lblPrecio.Text += $"{this.precioCompra:C}";
-            this.listado.EventoClienteAgregado += new DelegadoClienteAgregado(this.Listado_ClienteAgregadoEvent);
         }
 
         /// <summary>
@@ -132,12 +131,6 @@ namespace Vista
             this.Close();
         }
 
-        /// <summary>
-        /// Manejador del evento cliente agregado
-        /// </summary>
-        private void Listado_ClienteAgregadoEvent()
-        {
-            MessageBox.Show($"Se agrego un pedido al listado", "Pedido nuevo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+        
     }
 }

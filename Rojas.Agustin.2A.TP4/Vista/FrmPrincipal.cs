@@ -55,12 +55,15 @@ namespace Vista
             {
                 this.MostrarVentanaDeError(f);
             }
-            //Evento libro eliminado
-            this.libreria.EventoLibroEliminado += new DelegadoLibroEliminado(this.Libreria_LibroEliminadoEvent);
+           
             //Cliente inicial
             Cliente clienteInicial = new Cliente("Marcos", "Cuevas", "mcDmc@gmail.com",
                 "Cordoba Avda 1351 Piso 12", "155774131", libreria.Lista[0].Precio, libreria.Lista[0].Titulo);
             this.listado += clienteInicial;
+
+            //Evento
+            this.libreria.EventoLibroEliminado += new DelegadoLibroEliminado(this.Libreria_LibroEliminadoEvent);
+            this.listado.EventoClienteAgregado += new DelegadoClienteAgregado(this.Listado_ClienteAgregadoEvent);
 
             //Datagrid
             this.dgLibreria.DataSource = libreria.Lista;
@@ -360,6 +363,14 @@ namespace Vista
         private void Libreria_LibroEliminadoEvent(string titulo,string autor)
         {
             MessageBox.Show($"Se elimino \"{titulo}\" de {autor}.","Libro eliminado",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        /// Manejador del evento cliente agregado
+        /// </summary>
+        private void Listado_ClienteAgregadoEvent()
+        {
+            MessageBox.Show($"Se agrego un pedido al listado", "Pedido nuevo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
