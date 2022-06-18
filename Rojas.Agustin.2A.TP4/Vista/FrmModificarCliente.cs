@@ -124,6 +124,8 @@ namespace Vista
                 cliente.Correo = txtCorreo.Text;
                 cliente.Direccion = txtDireccion.Text;
                 cliente.Telefono = txtTelefono.Texto;
+                MessageBox.Show("Se modifico el cliente",
+                               "Cliente modificado", MessageBoxButtons.OK, MessageBoxIcon.None);
                 this.Close();
             }
         }

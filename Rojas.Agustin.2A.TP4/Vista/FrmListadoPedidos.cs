@@ -302,11 +302,7 @@ namespace Vista
                 {
                     FrmModificarCliente frmModificarCliente = new FrmModificarCliente(aux);
                     frmModificarCliente.ShowDialog();
-                    if (this.dao.ModificarCliente(aux))
-                    {
-                        MessageBox.Show("Se modifico el cliente",
-                                "Cliente modificado", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
+                    this.dao.ModificarCliente(aux);
                     this.RefrescarDataGrid();
                 }
             }
