@@ -20,6 +20,7 @@ namespace Vista
 
         /// <summary>
         /// Constructor del formulario
+        /// Agrega un manejador al evento Load
         /// </summary>
         public FrmPrincipal()
         {
@@ -31,7 +32,6 @@ namespace Vista
         }
 
         /// <summary>
-        /// Metodo de la etapa Load del formulario.
         /// Abre un archivo inicial para la libreria
         /// Trae el listado inicial de la base de datos
         /// Inicializa el data grid y los ordenamientos del combo box
