@@ -13,6 +13,7 @@ namespace Vista
     public partial class FrmModificarCliente : Form
     {
         private Cliente cliente;
+        private ClienteDAO dao;
 
         /// <summary>
         /// Constructor del formulario
@@ -22,6 +23,7 @@ namespace Vista
         {
             InitializeComponent();
             this.cliente = cliente;
+            dao = new ClienteDAO();
         }
         /// <summary>
         /// Metodo de la etapa load del formulario
@@ -71,10 +73,10 @@ namespace Vista
                 esValido = false;
                 str.AppendLine("El correo electronico (con @ y terminando en .com)");
             }
-            if (string.IsNullOrWhiteSpace(txtTelefono.Texto) || txtTelefono.Texto.Length < 8)
+            if (string.IsNullOrWhiteSpace(txtTelefono.Texto) || txtTelefono.Texto.Length < 7 || txtTelefono.Texto.Length > 13)
             {
                 esValido = false;
-                str.AppendLine("El telefono/celular (debe ser mayor a 7 digitos/solo numeros)");
+                str.AppendLine("El telefono/celular (debe ser mayor a 7 digitos/menor a 13/solo numeros)");
             }
 
             if (!esValido)
@@ -119,14 +121,26 @@ namespace Vista
         {
             if (this.ValidarCampos())
             {
-                cliente.Nombre = txtNombre.Text;
-                cliente.Apellido = txtApellido.Text;
-                cliente.Correo = txtCorreo.Text;
-                cliente.Direccion = txtDireccion.Text;
-                cliente.Telefono = txtTelefono.Texto;
-                MessageBox.Show("Se modifico el cliente",
-                               "Cliente modificado", MessageBoxButtons.OK, MessageBoxIcon.None);
-                this.Close();
+                Cliente aux = new Cliente();
+                aux.Codigo = cliente.Codigo;
+                aux.PrecioCompra = cliente.PrecioCompra;
+                aux.TituloCompra = cliente.TituloCompra;
+                aux.Nombre = txtNombre.Text;
+                aux.Apellido = txtApellido.Text;
+                aux.Correo = txtCorreo.Text;
+                aux.Direccion = txtDireccion.Text;
+                aux.Telefono = txtTelefono.Texto;
+                if (this.dao.ModificarCliente(aux))
+                {
+                    MessageBox.Show("Se modifico el cliente",
+                                    "Cliente modificado", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    this.cliente = aux;
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error al modificar al cliente","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
             }
         }
     }

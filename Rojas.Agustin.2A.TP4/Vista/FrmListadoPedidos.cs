@@ -15,7 +15,6 @@ namespace Vista
     public partial class FrmListadoPedidos : Form
     {
         private Listado listado;
-        private Listado databaseListado;
         private double ganancias;
         private ClienteDAO dao;
         private string codigoDescuento;
@@ -29,7 +28,6 @@ namespace Vista
         {
             InitializeComponent();
             this.listado = listado;
-            this.databaseListado = new Listado();
             this.ganancias = ganancias;
             dao = new ClienteDAO();
             this.Load += new EventHandler(this.InicializarControles);
@@ -66,25 +64,10 @@ namespace Vista
 
             //label Ganancias
             this.lblGanancias.Text = this.ganancias.ToString();
-
-            //Botones DB
-            try
-            {
-                if (ClienteDAOExtension.VerificarConexion(dao, ".", "TP_04"))
-                {
-                    this.btnBorrarCliente.Visible = true;
-                    this.btnGuardarDB.Visible = true;
-                    this.btnLeerDB.Visible = true;
-                    this.btnModificarCliente.Visible = true;
-                    this.databaseListado.ListaClientes = dao.LeerBaseDeDatos();
-                }
-            }
-            catch (Exception f)
-            {
-                this.MostrarVentanaDeError(f);
-            }
-
-
+            
+            this.btnBorrarCliente.Visible = true;
+            this.btnLeerDB.Visible = true;
+            this.btnModificarCliente.Visible = true;
         }
 
         /// <summary>
@@ -96,7 +79,6 @@ namespace Vista
             this.dgListado.DataSource = null;
             this.dgListado.DataSource = this.listado.ListaClientes;
             this.lblGanancias.Text = this.ganancias.ToString();
-            this.databaseListado.ListaClientes = dao.LeerBaseDeDatos();
         }
 
         /// <summary>
@@ -234,31 +216,7 @@ namespace Vista
             this.dbStatus.Visible = false;
             return auxListaClientes;
         }
-        /// <summary>
-        /// Guarda el listado actual de pedidos en la base de datos
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnGuardarDB_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if(MessageBox.Show("Esta seguro de querer agregar el listado actual a la base de datos?",
-                    "Guardar Listado",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    if (this.dao.GuardarClientes(this.listado.ListaClientes))
-                    {
-                        MessageBox.Show("Se guardo correctamente el listado",
-                            "Base de datos actualizada", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    
-                }
-            }
-            catch (Exception f)
-            {
-                this.MostrarVentanaDeError(f);
-            }
-        }
+
 
         /// <summary>
         /// Elimina al cliente seleccionado de la base de datos
@@ -273,7 +231,7 @@ namespace Vista
                 if (MessageBox.Show("Esta seguro de querer eliminar el cliente? Lo eliminará de la database.",
                     "Borrar cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    if (this.BuscarCliente(aux) && this.dao.Borrar(aux.Codigo))
+                    if (this.dao.Borrar(aux.Codigo))
                     {
                         this.listado -= aux;
                         MessageBox.Show("Se borró el cliente",
@@ -298,13 +256,11 @@ namespace Vista
             try
             {
                 Cliente aux = (Cliente)this.dgListado.SelectedRows[0].DataBoundItem;
-                if (this.BuscarCliente(aux))
-                {
-                    FrmModificarCliente frmModificarCliente = new FrmModificarCliente(aux);
-                    frmModificarCliente.ShowDialog();
-                    this.dao.ModificarCliente(aux);
-                    this.RefrescarDataGrid();
-                }
+                FrmModificarCliente frmModificarCliente = new FrmModificarCliente(aux);
+                frmModificarCliente.ShowDialog();
+                this.listado.ListaClientes = dao.LeerBaseDeDatos();
+                this.cboOrdenar.SelectedItem = "CODIGO";
+                this.RefrescarDataGrid();
             }
             catch (Exception f)
             {
@@ -312,32 +268,6 @@ namespace Vista
             }
         }
 
-        /// <summary>
-        /// Verifica que el cliente recibido por parametro
-        /// se encuentre en la base de datos.
-        /// </summary>
-        /// <param name="cliente"></param>
-        /// <returns></returns>
-        private bool BuscarCliente(Cliente cliente)
-        {
-            bool estaIncluido = false;
-            try
-            {
-                if (databaseListado == cliente)
-                {
-                    estaIncluido = true;
-                }
-                else
-                {
-                    throw new Exception("El cliente no esta en la base de datos");
-                }
-            } 
-            catch (Exception)
-            {
-                throw;
-            }
-            return estaIncluido;
-        }
         /// <summary>
         /// Muestra los detalles de la venta
         /// Con o sin codigo de descuento

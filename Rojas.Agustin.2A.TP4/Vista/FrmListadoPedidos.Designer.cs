@@ -40,7 +40,6 @@ namespace Vista
             this.mnuItemAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemGuardar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLeerDB = new System.Windows.Forms.Button();
-            this.btnGuardarDB = new System.Windows.Forms.Button();
             this.btnBorrarCliente = new System.Windows.Forms.Button();
             this.btnModificarCliente = new System.Windows.Forms.Button();
             this.dbStatus = new System.Windows.Forms.StatusStrip();
@@ -171,35 +170,17 @@ namespace Vista
             this.btnLeerDB.CausesValidation = false;
             this.btnLeerDB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btnLeerDB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLeerDB.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLeerDB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLeerDB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLeerDB.Location = new System.Drawing.Point(2, 23);
+            this.btnLeerDB.Location = new System.Drawing.Point(2, 11);
             this.btnLeerDB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLeerDB.Name = "btnLeerDB";
-            this.btnLeerDB.Size = new System.Drawing.Size(127, 40);
+            this.btnLeerDB.Size = new System.Drawing.Size(146, 52);
             this.btnLeerDB.TabIndex = 0;
-            this.btnLeerDB.Text = "LEER DATABASE";
+            this.btnLeerDB.Text = "LEER DATABASE/\r\nACTUALIZAR LISTADO";
             this.btnLeerDB.UseVisualStyleBackColor = false;
             this.btnLeerDB.Visible = false;
             this.btnLeerDB.Click += new System.EventHandler(this.btnLeerDB_Click);
-            // 
-            // btnGuardarDB
-            // 
-            this.btnGuardarDB.BackColor = System.Drawing.Color.GhostWhite;
-            this.btnGuardarDB.CausesValidation = false;
-            this.btnGuardarDB.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnGuardarDB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarDB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarDB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGuardarDB.Location = new System.Drawing.Point(147, 23);
-            this.btnGuardarDB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGuardarDB.Name = "btnGuardarDB";
-            this.btnGuardarDB.Size = new System.Drawing.Size(140, 40);
-            this.btnGuardarDB.TabIndex = 1;
-            this.btnGuardarDB.Text = "GUARDAR LISTADO\r\nEN DATABASE";
-            this.btnGuardarDB.UseVisualStyleBackColor = false;
-            this.btnGuardarDB.Visible = false;
-            this.btnGuardarDB.Click += new System.EventHandler(this.btnGuardarDB_Click);
             // 
             // btnBorrarCliente
             // 
@@ -209,12 +190,12 @@ namespace Vista
             this.btnBorrarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBorrarCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBorrarCliente.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBorrarCliente.Location = new System.Drawing.Point(309, 23);
+            this.btnBorrarCliente.Location = new System.Drawing.Point(181, 11);
             this.btnBorrarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorrarCliente.Name = "btnBorrarCliente";
-            this.btnBorrarCliente.Size = new System.Drawing.Size(140, 40);
+            this.btnBorrarCliente.Size = new System.Drawing.Size(156, 52);
             this.btnBorrarCliente.TabIndex = 2;
-            this.btnBorrarCliente.Text = "BORRAR CLIENTE\r\nDE DATABASE";
+            this.btnBorrarCliente.Text = "BORRAR CLIENTE\r\n";
             this.btnBorrarCliente.UseVisualStyleBackColor = false;
             this.btnBorrarCliente.Visible = false;
             this.btnBorrarCliente.Click += new System.EventHandler(this.btnBorrarCliente_Click);
@@ -227,12 +208,12 @@ namespace Vista
             this.btnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificarCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnModificarCliente.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnModificarCliente.Location = new System.Drawing.Point(469, 23);
+            this.btnModificarCliente.Location = new System.Drawing.Point(380, 11);
             this.btnModificarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificarCliente.Name = "btnModificarCliente";
-            this.btnModificarCliente.Size = new System.Drawing.Size(145, 40);
+            this.btnModificarCliente.Size = new System.Drawing.Size(156, 52);
             this.btnModificarCliente.TabIndex = 3;
-            this.btnModificarCliente.Text = "MODIFICAR CLIENTE \r\nEN DATABASE";
+            this.btnModificarCliente.Text = "MODIFICAR CLIENTE ";
             this.btnModificarCliente.UseVisualStyleBackColor = false;
             this.btnModificarCliente.Visible = false;
             this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click);
@@ -275,7 +256,6 @@ namespace Vista
             this.Controls.Add(this.cbCodigoDescuento);
             this.Controls.Add(this.btnModificarCliente);
             this.Controls.Add(this.btnBorrarCliente);
-            this.Controls.Add(this.btnGuardarDB);
             this.Controls.Add(this.btnLeerDB);
             this.Controls.Add(this.lblGanancias);
             this.Controls.Add(this.lblGananciasTexto);

@@ -42,8 +42,11 @@ namespace Vista
             this.mnuItemAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemGuardar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReclamo = new System.Windows.Forms.Button();
+            this.dbStatus = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusDB = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgLibreria)).BeginInit();
             this.mnuArchivos.SuspendLayout();
+            this.dbStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgLibreria
@@ -230,12 +233,29 @@ namespace Vista
             this.btnReclamo.UseVisualStyleBackColor = false;
             this.btnReclamo.Click += new System.EventHandler(this.btnReclamo_Click);
             // 
+            // dbStatus
+            // 
+            this.dbStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusDB});
+            this.dbStatus.Location = new System.Drawing.Point(0, 579);
+            this.dbStatus.Name = "dbStatus";
+            this.dbStatus.Size = new System.Drawing.Size(1020, 22);
+            this.dbStatus.TabIndex = 11;
+            this.dbStatus.Visible = false;
+            // 
+            // toolStripStatusDB
+            // 
+            this.toolStripStatusDB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.toolStripStatusDB.Name = "toolStripStatusDB";
+            this.toolStripStatusDB.Size = new System.Drawing.Size(0, 17);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1020, 601);
+            this.Controls.Add(this.dbStatus);
             this.Controls.Add(this.btnReclamo);
             this.Controls.Add(this.mnuArchivos);
             this.Controls.Add(this.btnBorrar);
@@ -254,6 +274,8 @@ namespace Vista
             ((System.ComponentModel.ISupportInitialize)(this.dgLibreria)).EndInit();
             this.mnuArchivos.ResumeLayout(false);
             this.mnuArchivos.PerformLayout();
+            this.dbStatus.ResumeLayout(false);
+            this.dbStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,6 +296,8 @@ namespace Vista
         private System.Windows.Forms.ToolStripMenuItem mnuItemAbrir;
         private System.Windows.Forms.ToolStripMenuItem mnuItemGuardar;
         private System.Windows.Forms.Button btnReclamo;
+        private System.Windows.Forms.StatusStrip dbStatus;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusDB;
     }
 }
 

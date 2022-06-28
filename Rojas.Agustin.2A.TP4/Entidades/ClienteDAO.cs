@@ -69,9 +69,9 @@ namespace Entidades
                 }
                 this.lector.Close();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new Exception("Error al leer de la base de datos");
+                throw new ClienteDAOException("Error al leer de la base de datos",e);
             }
             finally
             {
@@ -84,69 +84,58 @@ namespace Entidades
         }
         
         /// <summary>
-        /// Guarda la lista que recibe de parametro 
+        /// Guarda al cliente que recibe de parametro 
         /// en la base de datos
         /// </summary>
         /// <param name="clientes"></param>
         /// <returns></returns>
-        public bool GuardarClientes(List<Cliente> clientes)
+        public bool GuardarCliente(Cliente cliente)
         {
-            bool pudoGuardar = false;
-            if (clientes.Count > 0)
+            bool pudoGuardar = true;
+            try
             {
-                pudoGuardar = true;
-                try
-                {
-                    foreach (Cliente cliente in clientes)
-                    {
-                        this.comando = new SqlCommand();
-                        this.comando.Parameters.AddWithValue("@Codigo", cliente.Codigo.ToString());
-                        this.comando.Parameters.AddWithValue("@Nombre", cliente.Nombre);
-                        this.comando.Parameters.AddWithValue("@Apellido", cliente.Apellido);
-                        this.comando.Parameters.AddWithValue("@Correo", cliente.Correo);
-                        this.comando.Parameters.AddWithValue("@Direccion", cliente.Direccion);
-                        this.comando.Parameters.AddWithValue("@Telefono", cliente.Telefono);
-                        this.comando.Parameters.AddWithValue("@PrecioCompra", cliente.PrecioCompra);
-                        this.comando.Parameters.AddWithValue("@TituloCompra", cliente.TituloCompra);
+                this.comando = new SqlCommand();
+                this.comando.Parameters.AddWithValue("@Codigo", cliente.Codigo.ToString());
+                this.comando.Parameters.AddWithValue("@Nombre", cliente.Nombre);
+                this.comando.Parameters.AddWithValue("@Apellido", cliente.Apellido);
+                this.comando.Parameters.AddWithValue("@Correo", cliente.Correo);
+                this.comando.Parameters.AddWithValue("@Direccion", cliente.Direccion);
+                this.comando.Parameters.AddWithValue("@Telefono", cliente.Telefono);
+                this.comando.Parameters.AddWithValue("@PrecioCompra", cliente.PrecioCompra);
+                this.comando.Parameters.AddWithValue("@TituloCompra", cliente.TituloCompra);
 
-                        string sql = "INSERT INTO Clientes" +
-                            " VALUES (@Codigo, @Nombre, @Apellido, @Correo, @Direccion, @Telefono, @PrecioCompra, @TituloCompra)";
+                string sql = "INSERT INTO Clientes" +
+                    " VALUES (@Codigo, @Nombre, @Apellido, @Correo, @Direccion, @Telefono, @PrecioCompra, @TituloCompra)";
 
-                        this.comando.CommandType = CommandType.Text;
-                        this.comando.CommandText = sql;
-                        this.comando.Connection = this.conexion;
+                this.comando.CommandType = CommandType.Text;
+                this.comando.CommandText = sql;
+                this.comando.Connection = this.conexion;
 
-                        this.conexion.Open();
-                        int filasAfectadas = this.comando.ExecuteNonQuery();
-                        if (filasAfectadas == 0)
-                        {
-                            pudoGuardar = false;
-                        }
-                        this.conexion.Close();
-                    }
-                }
-                catch (SqlException)
+                this.conexion.Open();
+                int filasAfectadas = this.comando.ExecuteNonQuery();
+                if (filasAfectadas == 0)
                 {
                     pudoGuardar = false;
-                    throw new Exception("Error al guardar el pedido en la base de datos. El titulo de la compra es demasiado largo\n" +
-                        "Lo hice con varchar(200)");
                 }
-                catch (Exception)
-                {
-                    pudoGuardar = false;
-                    throw new Exception("Hay pedidos en el listado que ya estan en la base de datos. Atiendalos antes de guardar");
-                }
-                finally
-                {
-                    if(this.conexion.State == ConnectionState.Open)
-                    {
-                        this.conexion.Close();
-                    }
-                }
+                this.conexion.Close();
+                
             }
-            else
+            catch (SqlException e)
             {
-                throw new Exception("El listado de pedidos de clientes esta vacio");
+                pudoGuardar = false;
+                throw new ClienteDAOException("Error al guardar el cliente en la base de datos. Parametros demasiado largos",e);
+            }
+            catch (Exception e)
+            {
+                pudoGuardar = false;
+                throw new ClienteDAOException("Hay pedidos en el listado que ya estan en la base de datos. Atiendalos antes de guardar",e);
+            }
+            finally
+            {
+                if(this.conexion.State == ConnectionState.Open)
+                {
+                    this.conexion.Close();
+                }
             }
             return pudoGuardar;
         }

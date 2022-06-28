@@ -57,26 +57,6 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Metodo publico de ordenamiento que usa expresiones lambda
-        /// segun el criterio que recibe de parametro
-        /// </summary>
-        /// <param name="o">Criterio de ordenamiento</param>
-        public void OrdenarClientes(EOrdenamientoCliente o)
-        {
-            switch (o)
-            {
-                case EOrdenamientoCliente.OrdenarPorPrecio:
-                    this.listaClientes.Sort((cliente1,cliente2) => (int)(cliente2.PrecioCompra - cliente1.PrecioCompra));
-                    break;
-                case EOrdenamientoCliente.OrdenarPorCodigo:
-                    this.listaClientes.Sort((cliente1,cliente2) => cliente1.Codigo - cliente2.Codigo);
-                    break;
-                case EOrdenamientoCliente.OrdenarPorNombre:
-                    this.listaClientes.Sort((cliente1, cliente2) => cliente1.Nombre.CompareTo(cliente2.Nombre));
-                    break;
-            }
-        }
-        /// <summary>
         /// Se fija si un cliente que recibe de parametro 
         /// ya esta incluido en la lista de pedidos
         /// </summary>

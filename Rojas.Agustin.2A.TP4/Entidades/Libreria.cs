@@ -62,27 +62,6 @@ namespace Entidades
             }
         }
 
-
-        /// <summary>
-        /// Metodo publico de ordenamiento que usa expresiones lambda
-        /// segun el criterio que recibe de parametro
-        /// </summary>
-        /// <param name="o">Criterio de ordenamiento</param>
-        public void OrdenarLibros(EOrdenamientoLibro o)
-        {
-            switch (o)
-            {
-                case EOrdenamientoLibro.OrdenarPorPrecio:
-                    this.lista.Sort((libro1, libro2) => (int)(libro2.Precio - libro1.Precio));
-                    break;
-                case EOrdenamientoLibro.OrdenarPorTitulo:
-                    this.lista.Sort((libro1, libro2) => libro1.Titulo.CompareTo(libro2.Titulo));
-                    break;
-                case EOrdenamientoLibro.OrdenarPorPaginas:
-                    this.lista.Sort((libro1,libro2) => libro2.Paginas - libro1.Paginas);
-                    break;
-            }
-        }
         /// <summary>
         /// Añade todos los elementos de la lista generica
         /// a un stringbuilder y lo devuelve como string 

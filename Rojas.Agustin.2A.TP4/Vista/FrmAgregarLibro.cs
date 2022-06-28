@@ -224,12 +224,12 @@ namespace Vista
                 esValido = false;
                 str.AppendLine("La editorial");
             }
-            if (string.IsNullOrWhiteSpace(txtPaginas.Texto))
+            if (string.IsNullOrWhiteSpace(txtPaginas.Texto) || txtPaginas.Texto.Length > 6)
             {
                 esValido = false;
                 str.AppendLine("El numero de paginas");
             }
-            if (string.IsNullOrWhiteSpace(txtPrecio.Texto))
+            if (string.IsNullOrWhiteSpace(txtPrecio.Texto) || txtPrecio.Texto.Length > 6)
             {
                 esValido = false;
                 str.AppendLine("El precio");

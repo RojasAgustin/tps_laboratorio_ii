@@ -53,13 +53,21 @@ namespace Vista
                 Cliente cliente = new Cliente(nombre,apellido,correo,direccion,telefono,this.precioCompra,this.tituloCompra);
                 try
                 {
-                    this.listado += cliente;
+                    ClienteDAO dao = new ClienteDAO();
+                    if (dao.GuardarCliente(cliente))
+                    {
+                        this.listado += cliente;
+                        this.Close();
+                    }
                 }
                 catch (PedidoInvalidoException f)
                 {
                     MessageBox.Show(f.Message);
                 }
-                this.Close();
+                catch(ClienteDAOException f)
+                {
+                    MessageBox.Show(f.Message);
+                }
             }
         }
 
@@ -95,10 +103,10 @@ namespace Vista
                 esValido = false;
                 str.AppendLine("El correo electronico (con @ y terminando en .com)");
             }
-            if (string.IsNullOrWhiteSpace(txtTelefono.Texto) || txtTelefono.Texto.Length < 8)
+            if (string.IsNullOrWhiteSpace(txtTelefono.Texto) || txtTelefono.Texto.Length > 13 || txtTelefono.Texto.Length < 7)
             {
                 esValido = false;
-                str.AppendLine("El telefono/celular (debe ser mayor a 7 digitos/solo numeros)");
+                str.AppendLine("El telefono/celular (debe ser mayor a 7 digitos/menor a 13/solo numeros)");
             }
 
             if (!esValido)

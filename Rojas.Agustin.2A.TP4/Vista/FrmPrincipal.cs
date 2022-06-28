@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
@@ -55,11 +56,7 @@ namespace Vista
             {
                 this.MostrarVentanaDeError(f);
             }
-           
-            //Cliente inicial
-            Cliente clienteInicial = new Cliente("Marcos", "Cuevas", "mcDmc@gmail.com",
-                "Cordoba Avda 1351 Piso 12", "155774131", libreria.Lista[0].Precio, libreria.Lista[0].Titulo);
-            this.listado += clienteInicial;
+
 
             //Evento
             this.libreria.EventoLibroEliminado += new DelegadoLibroEliminado(this.Libreria_LibroEliminadoEvent);
@@ -178,7 +175,7 @@ namespace Vista
                     }
                     else
                     {
-                        throw new Exception("Para hacer zoom seleccione un solo libro por favor");
+                        throw new ArgumentOutOfRangeException("Para hacer zoom seleccione un solo libro por favor");
                     }
                 }
                 else
@@ -214,7 +211,7 @@ namespace Vista
                     }
                     else
                     {
-                        throw new Exception("Para borrar de la libreria seleccione un solo libro por favor.");
+                        throw new ArgumentOutOfRangeException("Para borrar de la libreria seleccione un solo libro por favor.");
                     }
                 }
                 else
@@ -255,7 +252,7 @@ namespace Vista
                     }
                     else
                     {
-                        throw new Exception("No hay ningun libro seleccionado.");
+                        throw new ArgumentOutOfRangeException("No hay ningun libro seleccionado.");
                     }
                 }
                 else
@@ -274,8 +271,9 @@ namespace Vista
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnListadoPedido_Click(object sender, EventArgs e)
+        private async void btnListadoPedido_Click(object sender, EventArgs e)
         {
+            this.listado.ListaClientes = await this.CargarBaseDeDatos();
             if(this.listado.ListaClientes.Count != 0)
             {
                 FrmListadoPedidos frmListadoPedidos = new FrmListadoPedidos(this.listado,ganancias);
@@ -288,6 +286,22 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Ejecuta un hilo secundario que simula esperar por 2 segundos
+        /// a leer desde la database y llama al metodo que cumple esta tarea
+        /// </summary>
+        /// <returns></returns>
+        private async Task<List<Cliente>> CargarBaseDeDatos()
+        {
+            this.dbStatus.Visible = true;
+            this.toolStripStatusDB.Text = "Cargando base de datos";
+            List<Cliente> auxListaClientes = await Task.Run(() => {
+                Thread.Sleep(2000);
+                return this.clienteDAO.LeerBaseDeDatos();
+            });
+            this.dbStatus.Visible = false;
+            return auxListaClientes;
+        }
         /// <summary>
         /// Abre un archivo .xml que contiene una libreria
         /// </summary>
