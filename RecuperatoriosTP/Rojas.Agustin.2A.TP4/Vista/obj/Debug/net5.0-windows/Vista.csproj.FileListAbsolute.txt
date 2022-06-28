@@ -1,0 +1,128 @@
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarLibro.resources
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarPedido.resources
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.FrmListadoPedidos.resources
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Usuario\source\repos\TP_03\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\source\repos\TP_03\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarLibro.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarPedido.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmListadoPedidos.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP3\Vista\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\source\repos\TP_04\Vista\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarLibro.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarPedido.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmListadoPedidos.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmModificarCliente.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmCodigoDescuento.resources
+C:\Users\Usuario\source\repos\TP_04\Vista\obj\Debug\net5.0-windows\Vista.FrmReclamo.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarLibro.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarPedido.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmCodigoDescuento.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmListadoPedidos.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmModificarCliente.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmReclamo.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
