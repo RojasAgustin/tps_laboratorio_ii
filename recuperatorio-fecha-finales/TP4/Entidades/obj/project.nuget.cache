@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "imrjUo1PsJe1NzgXtn0regaXpOzXdo7hTD3wITUhQGg/hTUw28x/oQANU5st/k4yAUkk87JtL50TitY0JyEsLQ==",
+  "dgSpecHash": "PMwmAktxGx5G0A0waVnns4xSMKcCBrxRIN5ikNnhraNK4xfTpqXJ5hN0v158zYweJJhiIYkxq3Vg1YFGCunuVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

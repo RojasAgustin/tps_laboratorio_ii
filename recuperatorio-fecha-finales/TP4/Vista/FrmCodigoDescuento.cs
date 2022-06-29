@@ -40,7 +40,7 @@ namespace Vista
         /// <param name="e"></param>
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtCodigo.Text))
+            if (!string.IsNullOrWhiteSpace(txtCodigo.Text))
             {
                 this.codigo = txtCodigo.Text;
                 this.Close();

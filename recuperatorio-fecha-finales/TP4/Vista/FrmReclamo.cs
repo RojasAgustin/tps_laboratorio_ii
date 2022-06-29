@@ -39,7 +39,7 @@ namespace Vista
         /// <param name="e"></param>
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(rtbReclamo.Text))
+            if (!string.IsNullOrWhiteSpace(rtbReclamo.Text))
             {
                 string reclamo = rtbReclamo.Text;
                 try

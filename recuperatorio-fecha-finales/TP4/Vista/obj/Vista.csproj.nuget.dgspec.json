@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\Vista.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Vista\\Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
+    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj",
         "projectName": "ControlesDeUsuario",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,14 +121,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\Vista.csproj": {
+    "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Vista\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Vista\\Vista.csproj",
         "projectName": "Vista",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\Vista.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Vista\\Vista.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Vista\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Vista\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -145,11 +145,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj"
+              "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\ControlesDeUsuario\\ControlesDeUsuario.csproj"
               },
-              "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\RecuperatoriosTP\\TP4\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\My Games\\Instructions-Donation info\\tps_laboratorio_ii\\recuperatorio-fecha-finales\\TP4\\Entidades\\Entidades.csproj"
               }
             }
           }
