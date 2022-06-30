@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Entidades;
 using System.Collections.Generic;
 using System;
+using System.Xml;
 
 namespace UnitTests
 {
@@ -85,7 +86,7 @@ namespace UnitTests
             Assert.IsTrue(noEstaIncluido);
         }
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
+        [ExpectedException(typeof(XmlException))]
         public void AbrirArchivoLibreria_MalNoEncontrado()
         {
             //Arrange

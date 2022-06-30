@@ -179,7 +179,7 @@ namespace Entidades
             }
             catch(Exception)
             {
-                throw new Exception("Error al guardar la libreria en formato XML");
+                throw new XmlException("Error al guardar la libreria en formato XML");
             }
             return pudoGuardar;
         }
@@ -213,7 +213,7 @@ namespace Entidades
             }
             catch (Exception)
             {
-                throw new Exception("Error al leer el archivo de la libreria en formato XML");
+                throw new XmlException("Error al leer el archivo de la libreria en formato XML");
             }
             return pudoLeer;
         }
@@ -238,7 +238,7 @@ namespace Entidades
             }
             catch (Exception)
             {
-                throw new Exception("Error al guardar el reclamo en el archivo");
+                throw new SystemException("Error al guardar el reclamo en el archivo");
             }
             return pudoGuardar;
         }

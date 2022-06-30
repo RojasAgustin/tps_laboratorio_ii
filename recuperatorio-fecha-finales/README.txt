@@ -3,8 +3,7 @@ Correcciones TP4:
 Se agrega una excepción propia para no lanzar Exception genéricas cuando
 se trabaja con la base de datos.
 
-Los archivos (.xml y .txt) se almacenan en la carpeta debug del
-proyecto Vista. 
+PDF aclara donde se guardan los archivos (carpeta debug del proyecto Vista) 
 
 Los métodos de extensión ahora tienen una utilidad más clara.
 
