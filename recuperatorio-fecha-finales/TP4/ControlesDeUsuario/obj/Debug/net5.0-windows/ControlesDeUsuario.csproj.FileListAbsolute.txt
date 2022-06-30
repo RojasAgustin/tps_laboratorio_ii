@@ -53,3 +53,17 @@ C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_i
 C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.dll
 C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ref\ControlesDeUsuario.dll
 C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\Rojas.Agustin.2A.TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\bin\Debug\net5.0-windows\ControlesDeUsuario.deps.json
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\bin\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\bin\Debug\net5.0-windows\ref\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\bin\Debug\net5.0-windows\ControlesDeUsuario.pdb
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.TxtSoloNumeros.resources
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.AssemblyInfo.cs
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ref\ControlesDeUsuario.dll
+C:\Users\Usuario\Documents\My Games\Instructions-Donation info\tps_laboratorio_ii\recuperatorio-fecha-finales\TP4\ControlesDeUsuario\obj\Debug\net5.0-windows\ControlesDeUsuario.pdb
