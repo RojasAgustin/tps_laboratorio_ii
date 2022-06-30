@@ -227,12 +227,12 @@ namespace Vista
             if (string.IsNullOrWhiteSpace(txtPaginas.Texto) || txtPaginas.Texto.Length > 6)
             {
                 esValido = false;
-                str.AppendLine("El numero de paginas");
+                str.AppendLine("El numero de paginas (menos de 7 digitos)");
             }
             if (string.IsNullOrWhiteSpace(txtPrecio.Texto) || txtPrecio.Texto.Length > 6)
             {
                 esValido = false;
-                str.AppendLine("El precio");
+                str.AppendLine("El precio (menos de 7 digitos)");
             }
             if (string.IsNullOrWhiteSpace((string)cboClasificacion.SelectedItem))
             {
