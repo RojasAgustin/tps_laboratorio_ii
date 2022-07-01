@@ -10,6 +10,5 @@ Los métodos de extensión ahora tienen una utilidad más clara.
 Al agregar un pedido este se agrega también a la base de datos.
 
 FrmListadoPedidos mejorado. Se trabaja siempre con la base de datos para
-evitar tener dos listas distintas.
+evitar tener dos listas distintas. Esto tambien corrige la excepcion no controlada.
 
-Excepcion no controlada arreglada.
