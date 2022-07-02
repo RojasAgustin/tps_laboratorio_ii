@@ -171,7 +171,8 @@ namespace Entidades
             catch (Exception e)
             {
                 pudoGuardar = false;
-                throw new ClienteDAOException("Error al guardar el cliente en la base de datos. Parametros demasiado largos/codigo repetido", e);
+                throw new ClienteDAOException("Error al guardar el cliente en la base de datos. " +
+                    "Uno o mas parametros son demasiado largos / codigo de compra repetido", e);
             }
             finally
             {

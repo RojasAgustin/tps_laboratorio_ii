@@ -224,7 +224,7 @@ namespace Vista
                 esValido = false;
                 str.AppendLine("La editorial");
             }
-            if (string.IsNullOrWhiteSpace(txtPaginas.Texto) || txtPaginas.Texto.Length > 6 || int.Parse(txtPrecio.Texto) == 0)
+            if (string.IsNullOrWhiteSpace(txtPaginas.Texto) || txtPaginas.Texto.Length > 6 || int.Parse(txtPaginas.Texto) == 0)
             {
                 esValido = false;
                 str.AppendLine("El numero de paginas (menos de 7 digitos/distinto de cero)");

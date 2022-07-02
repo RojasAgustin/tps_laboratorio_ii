@@ -132,7 +132,7 @@ namespace Vista
                 aux.Correo = txtCorreo.Text;
                 aux.Direccion = txtDireccion.Text;
                 aux.Telefono = txtTelefono.Texto;
-                //Try-catch instead of if-else
+            
                 if (this.dao.ModificarCliente(aux))
                 {
                     MessageBox.Show("Se modifico el cliente",
