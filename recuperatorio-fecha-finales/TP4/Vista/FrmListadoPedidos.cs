@@ -255,6 +255,10 @@ namespace Vista
                                     "Cliente eliminado", MessageBoxButtons.OK, MessageBoxIcon.None);
                             this.RefrescarDataGrid();
                         }
+                        else
+                        {
+                            throw new ClienteDAOException("El pedido no esta en la base de datos",null);
+                        }
                     }
                 }
                 else
